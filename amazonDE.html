@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2022.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Courier; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Courier; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.badge {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>position: fixed;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>bottom: 2rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>left: 2rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>z-index: 999;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.gpudrops {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>font-face: Arial, sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>font-size: 2rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>font-weight: bold;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>letter-spacing: -2px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>transform: scale(1, 1.4);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>-webkit-transform: scale(1, 1.4);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>-moz-transform: scale(1, 1.4);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>-ms-transform: scale(1, 1.4);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>-o-transform: scale(1, 1.4);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>color: #fff;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>text-shadow: 2px 2px rgba(0, 0, 0, 0.2);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>padding: 12px 24px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>border-radius: 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>overflow: hidden;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>background-color: rgba(200, 200, 200, 0.4);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>-webkit-backdrop-filter: blur(4px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>backdrop-filter: blur(4px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.gpudrops_details {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>padding-top: 4px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>color: #fff;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>font-size: 1rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>letter-spacing: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>text-shadow: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const do_checkout=true;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const href=window.location.href.toLowerCase();</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function on_elem_present(selector,check_every=100) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>return new Promise(function(resolve,reject) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const check_interval=setInterval(function() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if(document.querySelector(selector)) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>clearInterval(check_interval);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>return resolve();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},check_every);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function sleep(i) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>return new Promise(function(resolve,reject) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>setTimeout(resolve,i);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function add_to_cart() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const s='.a-button-input';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>on_elem_present(s)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>.then(sleep.bind(100))</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>.then(document.querySelector(s).click());</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function place_order() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const s='input[name="placeYourOrder1"]'</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>on_elem_present(s)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>.then(sleep.bind(100))</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>.then(document.querySelector(s).click());</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>if(href.match('https://www.amazon.de/gp/aws/cart/.*'))</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>add_to_cart();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>else if(do_checkout&amp;&amp;href.match('https://www.amazon.de/gp/buy/spc/.*'))</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>place_order();</span></p>
+<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;a style='text-decoration: none; color: inherit; font: inherit;' href='https://gpudrops.com/' target='#'&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class='badge'&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class='gpudrops'&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div&gt;GPU DROPS&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class='gpudrops_details'&gt;Amazon.de Auto-Buy&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+</body>
+</html>
