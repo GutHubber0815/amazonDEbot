@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kanzlei Himmelsbach & Kollegen in Bad Mergentheim und Igersheim - Ihre Experten für Familienrecht, Erbrecht, Strafrecht, Arbeitsrecht und Mietrecht. Kompetente Rechtsberatung seit Jahren.">
+    <meta name="keywords" content="Rechtsanwalt Bad Mergentheim, Rechtsanwalt Igersheim, Familienrecht, Erbrecht, Strafrecht, Arbeitsrecht, Mietrecht, Stephan Himmelsbach, Fritz Himmelsbach">
+    <meta name="author" content="Kanzlei Himmelsbach & Kollegen">
+    <meta name="robots" content="index, follow">
+    <title>Kanzlei Himmelsbach & Kollegen | Rechtsanwälte in Bad Mergentheim & Igersheim</title>
+
+    <!-- Strukturierte Daten für LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "Kanzlei Himmelsbach & Kollegen",
+        "image": "",
+        "address": [{
+            "@type": "PostalAddress",
+            "streetAddress": "Mühlwehrstraße 33",
+            "addressLocality": "Bad Mergentheim",
+            "postalCode": "97980",
+            "addressCountry": "DE"
+        }, {
+            "@type": "PostalAddress",
+            "streetAddress": "Steigerwaldstraße 27",
+            "addressLocality": "Igersheim",
+            "postalCode": "97999",
+            "addressCountry": "DE"
+        }],
+        "telephone": "+49-7931-6178",
+        "faxNumber": "+49-7931-51422",
+        "email": "rae.himmelsbach@t-online.de",
+        "url": "https://www.kanzlei-himmelsbach.de",
+        "priceRange": "$$",
+        "openingHours": "Mo-Fr 08:00-17:00"
+    }
+    </script>
+
+    <style>
+        /* CSS Reset & Base Styles */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --primary-color: #1a4d7a;
+            --secondary-color: #2874a6;
+            --accent-color: #c89f5d;
+            --text-color: #2c3e50;
+            --bg-color: #ffffff;
+            --light-bg: #f8f9fa;
+            --border-color: #dee2e6;
+            --focus-color: #2874a6;
+            --success-color: #28a745;
+            --error-color: #dc3545;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            font-size: 16px;
+        }
+
+        /* Skip Link */
+        .skip-link {
+            position: absolute;
+            top: -50px;
+            left: 0;
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            z-index: 100;
+            font-weight: 600;
+        }
+
+        .skip-link:focus {
+            top: 0;
+            outline: 3px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.25rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+        }
+
+        .logo h1 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: -0.5px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.6rem 0.3rem;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav a:hover, nav a:focus {
+            border-bottom-color: var(--accent-color);
+            color: var(--accent-color);
+            outline: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 5rem 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-text h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        .hero-text p {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-illustration {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+
+        .btn:hover, .btn:focus {
+            background-color: #b48f4d;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+            outline: 2px solid var(--accent-color);
+            outline-offset: 3px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+
+        /* Standorte Section */
+        .standorte-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .standort-card {
+            background: var(--light-bg);
+            padding: 2.5rem;
+            border-radius: 10px;
+            border: 2px solid var(--border-color);
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+        }
+
+        .standort-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            border-color: var(--secondary-color);
+        }
+
+        .location-icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 1.5rem;
+        }
+
+        .standort-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 0.75rem;
+        }
+
+        .standort-card p {
+            margin-bottom: 0.75rem;
+            line-height: 1.8;
+        }
+
+        .standort-card strong {
+            color: var(--primary-color);
+        }
+
+        /* Fachgebiete Grid */
+        .fachgebiete-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .fachgebiet-card {
+            background: var(--light-bg);
+            padding: 2.5rem;
+            border-radius: 10px;
+            border: 2px solid var(--border-color);
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+        }
+
+        .fachgebiet-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            border-color: var(--secondary-color);
+        }
+
+        .fachgebiet-icon {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 1.5rem;
+        }
+
+        .fachgebiet-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1.25rem;
+            font-size: 1.6rem;
+        }
+
+        .fachgebiet-card p {
+            margin-bottom: 1.25rem;
+            line-height: 1.8;
+        }
+
+        .fachgebiet-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .fachgebiet-card li {
+            padding: 0.6rem 0;
+            padding-left: 2rem;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .fachgebiet-card li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 4rem;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            border-bottom: 4px solid var(--accent-color);
+            padding-bottom: 0.75rem;
+        }
+
+        section p {
+            line-height: 1.8;
+            margin-bottom: 1.25rem;
+        }
+
+        /* Team Section */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .team-member {
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            border: 2px solid var(--border-color);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .team-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            border: 4px solid var(--accent-color);
+        }
+
+        .team-member h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .team-member .title {
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .team-member p {
+            text-align: left;
+            margin-top: 1rem;
+        }
+
+        /* Kontaktformular */
+        .contact-form {
+            max-width: 700px;
+            margin: 2.5rem auto;
+            background: var(--light-bg);
+            padding: 3rem;
+            border-radius: 10px;
+            border: 2px solid var(--border-color);
+            box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+        }
+
+        .form-group {
+            margin-bottom: 1.75rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.6rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            font-size: 1.05rem;
+        }
+
+        label .required {
+            color: var(--error-color);
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 0.9rem;
+            border: 2px solid var(--border-color);
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 3px rgba(40, 116, 166, 0.1);
+        }
+
+        textarea {
+            min-height: 180px;
+            resize: vertical;
+        }
+
+        .honeypot {
+            position: absolute;
+            left: -9999px;
+            width: 1px;
+            height: 1px;
+        }
+
+        .form-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2.5rem;
+        }
+
+        button[type="submit"] {
+            flex: 1;
+        }
+
+        /* Info Box */
+        .info-box {
+            margin-top: 3rem;
+            padding: 2.5rem;
+            background: var(--light-bg);
+            border-radius: 10px;
+            border-left: 5px solid var(--accent-color);
+            box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+        }
+
+        .info-box h3 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .info-box p {
+            margin-bottom: 0.75rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4rem 1.5rem 1.5rem;
+            margin-top: 5rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1.25rem;
+            color: var(--accent-color);
+            font-size: 1.4rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-section a:hover, .footer-section a:focus {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            font-size: 0.95rem;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.75);
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 2rem auto;
+            padding: 3rem;
+            border-radius: 10px;
+            max-width: 900px;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        .modal-close {
+            position: absolute;
+            right: 1.5rem;
+            top: 1.5rem;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--text-color);
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0.5rem;
+            line-height: 1;
+            transition: all 0.3s ease;
+        }
+
+        .modal-close:hover, .modal-close:focus {
+            color: var(--error-color);
+            outline: 2px solid var(--focus-color);
+            outline-offset: 3px;
+        }
+
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            box-shadow: 0 -4px 15px rgba(0,0,0,0.25);
+            z-index: 999;
+            display: none;
+        }
+
+        .cookie-banner.active {
+            display: block;
+        }
+
+        .cookie-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .cookie-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .cookie-text a {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        .cookie-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .cookie-btn {
+            padding: 0.9rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .cookie-accept {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        .cookie-accept:hover, .cookie-accept:focus {
+            background-color: #b48f4d;
+            outline: 2px solid white;
+            outline-offset: 2px;
+        }
+
+        /* Impressum Styling */
+        .impressum-content h3 {
+            color: var(--primary-color);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .impressum-content h4 {
+            color: var(--secondary-color);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .impressum-content p {
+            margin-bottom: 1rem;
+            line-height: 1.9;
+        }
+
+        .impressum-content ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .impressum-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-text h2 {
+                font-size: 2rem;
+            }
+
+            .hero-text p {
+                font-size: 1.1rem;
+            }
+
+            .hero-image {
+                order: -1;
+            }
+
+            section h2 {
+                font-size: 2rem;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 0.75rem;
+                width: 100%;
+                text-align: center;
+            }
+
+            nav a {
+                display: block;
+            }
+
+            .fachgebiete-grid, .standorte-grid, .team-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cookie-content {
+                flex-direction: column;
+            }
+
+            .cookie-actions {
+                width: 100%;
+            }
+
+            .cookie-btn {
+                flex: 1;
+            }
+
+            .contact-form {
+                padding: 2rem;
+            }
+
+            .modal-content {
+                padding: 2rem;
+                margin: 1rem;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            header, .cookie-banner, .modal, .btn {
+                display: none;
+            }
+
+            body {
+                color: black;
+            }
+
+            a {
+                text-decoration: underline;
+            }
+
+            .hero {
+                background: white;
+                color: black;
+            }
+        }
+
+        /* High Contrast Mode Support */
+        @media (prefers-contrast: high) {
+            :root {
+                --primary-color: #000066;
+                --text-color: #000000;
+                --border-color: #000000;
+            }
+
+            .btn, .cookie-accept {
+                border: 3px solid white;
+            }
+        }
+
+        /* Reduced Motion Support */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+
+    <!-- Header -->
+    <header role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Kanzlei Logo">
+                    <circle cx="50" cy="50" r="45" fill="#c89f5d"/>
+                    <path d="M30 70 L30 30 L45 30 L45 45 L55 45 L55 30 L70 30 L70 70 M45 50 L55 50" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="50" cy="25" r="8" fill="white"/>
+                </svg>
+                <h1>Kanzlei Himmelsbach & Kollegen</h1>
+            </div>
+            <nav role="navigation" aria-label="Hauptnavigation">
+                <ul>
+                    <li><a href="#standorte">Standorte</a></li>
+                    <li><a href="#fachgebiete">Fachgebiete</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                    <li><a href="#impressum-link" onclick="openModal('impressum-modal'); return false;">Impressum</a></li>
+                    <li><a href="#datenschutz-link" onclick="openModal('datenschutz-modal'); return false;">Datenschutz</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" role="banner">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>Ihre kompetente Rechtsberatung in Bad Mergentheim & Igersheim</h2>
+                <p>Erfahrene Rechtsanwälte für Familienrecht, Erbrecht, Strafrecht, Arbeitsrecht und Mietrecht. Persönliche Beratung an zwei Standorten.</p>
+                <a href="#kontakt" class="btn" role="button">Jetzt Termin vereinbaren</a>
+            </div>
+            <div class="hero-image">
+                <svg class="hero-illustration" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Illustration Rechtsberatung">
+                    <!-- Justice scales illustration -->
+                    <circle cx="250" cy="200" r="150" fill="rgba(255,255,255,0.1)"/>
+                    <rect x="220" y="250" width="60" height="120" rx="5" fill="white" opacity="0.9"/>
+                    <circle cx="250" cy="150" r="40" fill="white" opacity="0.9"/>
+                    <!-- Scales -->
+                    <line x1="150" y1="180" x2="350" y2="180" stroke="white" stroke-width="6" stroke-linecap="round"/>
+                    <line x1="250" y1="150" x2="250" y2="180" stroke="white" stroke-width="6" stroke-linecap="round"/>
+                    <!-- Left scale -->
+                    <path d="M120 200 L180 200 L180 210 L120 210 Z" fill="white" opacity="0.9"/>
+                    <line x1="150" y1="180" x2="150" y2="200" stroke="white" stroke-width="3"/>
+                    <!-- Right scale -->
+                    <path d="M320 200 L380 200 L380 210 L320 210 Z" fill="white" opacity="0.9"/>
+                    <line x1="350" y1="180" x2="350" y2="200" stroke="white" stroke-width="3"/>
+                    <!-- Document -->
+                    <rect x="100" y="100" width="80" height="100" rx="5" fill="white" opacity="0.8"/>
+                    <line x1="115" y1="120" x2="165" y2="120" stroke="#1a4d7a" stroke-width="3"/>
+                    <line x1="115" y1="135" x2="165" y2="135" stroke="#1a4d7a" stroke-width="3"/>
+                    <line x1="115" y1="150" x2="165" y2="150" stroke="#1a4d7a" stroke-width="3"/>
+                    <!-- Briefcase -->
+                    <rect x="360" y="100" width="90" height="70" rx="5" fill="white" opacity="0.8"/>
+                    <rect x="385" y="90" width="40" height="15" rx="3" fill="white" opacity="0.8"/>
+                    <line x1="380" y1="135" x2="430" y2="135" stroke="#1a4d7a" stroke-width="4"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Standorte -->
+        <section id="standorte" class="container">
+            <h2>Unsere Standorte</h2>
+            <div class="standorte-grid">
+                <article class="standort-card">
+                    <svg class="location-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Standort Icon">
+                        <circle cx="50" cy="40" r="30" fill="#2874a6"/>
+                        <circle cx="50" cy="40" r="15" fill="white"/>
+                        <path d="M50 70 C30 55, 25 45, 25 40 C25 25, 35 15, 50 15 C65 15, 75 25, 75 40 C75 45, 70 55, 50 70 Z" fill="#c89f5d" opacity="0.7"/>
+                    </svg>
+                    <h3>Bad Mergentheim</h3>
+                    <p><strong>Adresse:</strong><br>
+                    Mühlwehrstraße 33<br>
+                    97980 Bad Mergentheim</p>
+                    <p><strong>Telefon:</strong> +49 7931 6178<br>
+                    <strong>Telefon alternativ:</strong> +49 7931 561124<br>
+                    <strong>Telefax:</strong> +49 7931 51422</p>
+                    <p><strong>E-Mail:</strong> rae.himmelsbach@t-online.de</p>
+                    <p><strong>Öffnungszeiten:</strong><br>
+                    Montag - Freitag: 08:00 - 17:00 Uhr<br>
+                    Termine nach Vereinbarung</p>
+                </article>
+
+                <article class="standort-card">
+                    <svg class="location-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Standort Icon">
+                        <circle cx="50" cy="40" r="30" fill="#2874a6"/>
+                        <circle cx="50" cy="40" r="15" fill="white"/>
+                        <path d="M50 70 C30 55, 25 45, 25 40 C25 25, 35 15, 50 15 C65 15, 75 25, 75 40 C75 45, 70 55, 50 70 Z" fill="#c89f5d" opacity="0.7"/>
+                    </svg>
+                    <h3>Igersheim</h3>
+                    <p><strong>Adresse:</strong><br>
+                    Steigerwaldstraße 27<br>
+                    97999 Igersheim</p>
+                    <p><strong>Telefon:</strong> +49 7931 6178<br>
+                    <strong>Telefon alternativ:</strong> +49 7931 561124<br>
+                    <strong>Telefax:</strong> +49 7931 51422</p>
+                    <p><strong>E-Mail:</strong> rae.himmelsbach@t-online.de</p>
+                    <p><strong>Öffnungszeiten:</strong><br>
+                    Montag - Freitag: 08:00 - 17:00 Uhr<br>
+                    Termine nach Vereinbarung</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Fachgebiete -->
+        <section id="fachgebiete" class="container">
+            <h2>Unsere Fachgebiete</h2>
+            <div class="fachgebiete-grid">
+                <article class="fachgebiet-card">
+                    <svg class="fachgebiet-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Familienrecht Icon">
+                        <circle cx="50" cy="50" r="45" fill="#e8f4f8"/>
+                        <circle cx="35" cy="35" r="12" fill="#2874a6"/>
+                        <circle cx="65" cy="35" r="12" fill="#2874a6"/>
+                        <path d="M20 60 C20 50, 28 45, 35 45 C42 45, 48 50, 50 55 C52 50, 58 45, 65 45 C72 45, 80 50, 80 60 L80 75 L20 75 Z" fill="#c89f5d"/>
+                        <circle cx="50" cy="70" r="8" fill="#2874a6"/>
+                    </svg>
+                    <h3>Familienrecht</h3>
+                    <p>Einfühlsame Beratung in allen familienrechtlichen Angelegenheiten mit Schwerpunkt auf individueller Lösungsfindung.</p>
+                    <ul>
+                        <li>Scheidung & Trennung</li>
+                        <li>Sorgerecht & Umgangsrecht</li>
+                        <li>Unterhalt (Kindes-, Ehegatten-, Elternunterhalt)</li>
+                        <li>Zugewinnausgleich & Versorgungsausgleich</li>
+                        <li>Ehevertrag & Scheidungsfolgenvereinbarung</li>
+                        <li>Adoption & Vaterschaftsanerkennung</li>
+                    </ul>
+                </article>
+
+                <article class="fachgebiet-card">
+                    <svg class="fachgebiet-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Erbrecht Icon">
+                        <circle cx="50" cy="50" r="45" fill="#e8f4f8"/>
+                        <rect x="30" y="40" width="40" height="45" rx="3" fill="#2874a6"/>
+                        <rect x="35" y="50" width="30" height="3" fill="#c89f5d"/>
+                        <rect x="35" y="58" width="30" height="3" fill="#c89f5d"/>
+                        <rect x="35" y="66" width="20" height="3" fill="#c89f5d"/>
+                        <path d="M40 25 L50 15 L60 25 L60 40 L40 40 Z" fill="#c89f5d"/>
+                        <circle cx="50" cy="30" r="3" fill="white"/>
+                    </svg>
+                    <h3>Erbrecht</h3>
+                    <p>Kompetente Beratung bei Nachlass, Testament und Erbstreitigkeiten für eine rechtssichere Vermögensnachfolge.</p>
+                    <ul>
+                        <li>Testamentsgestaltung & Erbverträge</li>
+                        <li>Erbauseinandersetzung & Erbteilsstreitigkeiten</li>
+                        <li>Pflichtteilsansprüche</li>
+                        <li>Vorsorgevollmacht & Betreuungsverfügung</li>
+                        <li>Erbschaftssteuer & Schenkungen</li>
+                        <li>Nachlassverwaltung & Testamentsvollstreckung</li>
+                    </ul>
+                </article>
+
+                <article class="fachgebiet-card">
+                    <svg class="fachgebiet-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Strafrecht Icon">
+                        <circle cx="50" cy="50" r="45" fill="#e8f4f8"/>
+                        <rect x="35" y="35" width="30" height="40" rx="3" fill="#2874a6"/>
+                        <circle cx="50" cy="50" r="8" fill="#c89f5d"/>
+                        <rect x="48" y="58" width="4" height="12" fill="#c89f5d"/>
+                        <path d="M30 25 L70 25 L70 35 L30 35 Z" fill="#c89f5d"/>
+                    </svg>
+                    <h3>Strafrecht</h3>
+                    <p>Verteidigung in allen strafrechtlichen Verfahren - vom Ermittlungsverfahren bis zum Gerichtsprozess.</p>
+                    <ul>
+                        <li>Strafverteidigung vor Gericht</li>
+                        <li>Verkehrsstrafrecht (MPU, Fahrverbot)</li>
+                        <li>Betäubungsmittelstrafrecht</li>
+                        <li>Wirtschaftsstrafrecht</li>
+                        <li>Opfervertretung & Nebenklage</li>
+                        <li>Ordnungswidrigkeiten & Bußgeldverfahren</li>
+                    </ul>
+                </article>
+
+                <article class="fachgebiet-card">
+                    <svg class="fachgebiet-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Arbeitsrecht Icon">
+                        <circle cx="50" cy="50" r="45" fill="#e8f4f8"/>
+                        <rect x="25" y="40" width="50" height="35" rx="3" fill="#2874a6"/>
+                        <rect x="30" y="50" width="15" height="3" fill="#c89f5d"/>
+                        <rect x="30" y="58" width="20" height="3" fill="#c89f5d"/>
+                        <rect x="30" y="66" width="18" height="3" fill="#c89f5d"/>
+                        <circle cx="62" cy="58" r="8" fill="#c89f5d"/>
+                        <path d="M45 25 L55 25 L55 40 L45 40 Z" fill="#c89f5d"/>
+                    </svg>
+                    <h3>Arbeitsrecht</h3>
+                    <p>Beratung und Vertretung für Arbeitnehmer und Arbeitgeber in allen arbeitsrechtlichen Fragen.</p>
+                    <ul>
+                        <li>Kündigungsschutz & Abfindungen</li>
+                        <li>Arbeitsverträge & Aufhebungsverträge</li>
+                        <li>Abmahnungen & Zeugnisse</li>
+                        <li>Überstunden & Urlaubsansprüche</li>
+                        <li>Betriebsrat & Betriebsvereinbarungen</li>
+                        <li>Arbeitsgerichtsprozesse</li>
+                    </ul>
+                </article>
+
+                <article class="fachgebiet-card">
+                    <svg class="fachgebiet-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Mietrecht Icon">
+                        <circle cx="50" cy="50" r="45" fill="#e8f4f8"/>
+                        <rect x="30" y="35" width="40" height="45" rx="3" fill="#2874a6"/>
+                        <rect x="40" y="45" width="8" height="10" fill="#c89f5d"/>
+                        <rect x="52" y="45" width="8" height="10" fill="#c89f5d"/>
+                        <rect x="40" y="60" width="8" height="10" fill="#c89f5d"/>
+                        <rect x="52" y="60" width="8" height="10" fill="#c89f5d"/>
+                        <path d="M25 35 L50 20 L75 35" stroke="#c89f5d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    </svg>
+                    <h3>Mietrecht</h3>
+                    <p>Umfassende Beratung für Mieter und Vermieter bei allen mietrechtlichen Auseinandersetzungen.</p>
+                    <ul>
+                        <li>Nebenkostenabrechnungen</li>
+                        <li>Mietminderung bei Mängeln</li>
+                        <li>Kündigung & Räumungsklage</li>
+                        <li>Mieterhöhungen & Mietpreisbremse</li>
+                        <li>Betriebskosten & Kaution</li>
+                        <li>Gewerbemietrecht</li>
+                    </ul>
+                </article>
+
+                <article class="fachgebiet-card">
+                    <svg class="fachgebiet-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Zivilrecht Icon">
+                        <circle cx="50" cy="50" r="45" fill="#e8f4f8"/>
+                        <circle cx="35" cy="45" r="18" stroke="#2874a6" stroke-width="4" fill="none"/>
+                        <circle cx="65" cy="55" r="18" stroke="#c89f5d" stroke-width="4" fill="none"/>
+                        <path d="M45 40 L55 50" stroke="#2874a6" stroke-width="3"/>
+                        <circle cx="50" cy="45" r="5" fill="#c89f5d"/>
+                    </svg>
+                    <h3>Allgemeines Zivilrecht</h3>
+                    <p>Beratung und Vertretung in allen zivilrechtlichen Angelegenheiten und Schadensregulierung.</p>
+                    <ul>
+                        <li>Vertragsrecht & Vertragsgestaltung</li>
+                        <li>Schadensersatzansprüche</li>
+                        <li>Kaufrecht & Gewährleistung</li>
+                        <li>Nachbarschaftsrecht</li>
+                        <li>Forderungseinzug & Inkasso</li>
+                        <li>Außergerichtliche Streitschlichtung</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Team -->
+        <section id="team" class="container">
+            <h2>Unser Team</h2>
+            <p>Unsere erfahrenen Rechtsanwälte beraten Sie kompetent und persönlich in allen rechtlichen Angelegenheiten. Mit langjähriger Erfahrung und Engagement setzen wir uns für Ihre Interessen ein.</p>
+
+            <div class="team-grid">
+                <article class="team-member">
+                    <svg class="team-photo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-label="Fritz Himmelsbach">
+                        <circle cx="100" cy="100" r="100" fill="#e8f4f8"/>
+                        <circle cx="100" cy="80" r="35" fill="#2874a6"/>
+                        <path d="M40 160 C40 120, 60 110, 100 110 C140 110, 160 120, 160 160 L160 200 L40 200 Z" fill="#2874a6"/>
+                        <circle cx="85" cy="75" r="5" fill="white"/>
+                        <circle cx="115" cy="75" r="5" fill="white"/>
+                    </svg>
+                    <h3>Fritz Himmelsbach</h3>
+                    <p class="title">Rechtsanwalt</p>
+                    <p>Langjährige Erfahrung in der Rechtsberatung mit Schwerpunkt auf zivilrechtlichen Mandaten.</p>
+                </article>
+
+                <article class="team-member">
+                    <svg class="team-photo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-label="Burkhard Müssig">
+                        <circle cx="100" cy="100" r="100" fill="#e8f4f8"/>
+                        <circle cx="100" cy="80" r="35" fill="#2874a6"/>
+                        <path d="M40 160 C40 120, 60 110, 100 110 C140 110, 160 120, 160 160 L160 200 L40 200 Z" fill="#2874a6"/>
+                        <circle cx="85" cy="75" r="5" fill="white"/>
+                        <circle cx="115" cy="75" r="5" fill="white"/>
+                        <rect x="85" y="95" width="30" height="4" rx="2" fill="white"/>
+                    </svg>
+                    <h3>Burkhard Müssig</h3>
+                    <p class="title">Rechtsanwalt</p>
+                    <p>Spezialisiert auf komplexe rechtliche Fragestellungen mit fundierter juristischer Expertise.</p>
+                </article>
+
+                <article class="team-member">
+                    <svg class="team-photo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-label="Stephan Himmelsbach">
+                        <circle cx="100" cy="100" r="100" fill="#e8f4f8"/>
+                        <circle cx="100" cy="80" r="35" fill="#2874a6"/>
+                        <path d="M40 160 C40 120, 60 110, 100 110 C140 110, 160 120, 160 160 L160 200 L40 200 Z" fill="#2874a6"/>
+                        <circle cx="85" cy="75" r="5" fill="white"/>
+                        <circle cx="115" cy="75" r="5" fill="white"/>
+                        <path d="M90 92 Q100 97, 110 92" stroke="white" stroke-width="3" fill="none"/>
+                    </svg>
+                    <h3>Stephan Himmelsbach</h3>
+                    <p class="title">Rechtsanwalt</p>
+                    <p>Schwerpunkte: Familienrecht, Erbrecht, Strafrecht, Arbeitsrecht und allgemeines Zivilrecht.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Kontaktformular -->
+        <section id="kontakt" class="container">
+            <h2>Kontaktieren Sie uns</h2>
+            <p>Wir freuen uns auf Ihre Anfrage. Nutzen Sie unser Kontaktformular oder rufen Sie uns direkt an. Termine sind nach Vereinbarung auch außerhalb der regulären Öffnungszeiten möglich.</p>
+
+            <form class="contact-form" onsubmit="handleSubmit(event)" novalidate>
+                <div class="form-group">
+                    <label for="name">Name <span class="required" aria-label="Pflichtfeld">*</span></label>
+                    <input type="text" id="name" name="name" required aria-required="true" autocomplete="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-Mail <span class="required" aria-label="Pflichtfeld">*</span></label>
+                    <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefon</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel">
+                </div>
+
+                <div class="form-group">
+                    <label for="standort">Bevorzugter Standort</label>
+                    <select id="standort" name="standort">
+                        <option value="">Bitte wählen...</option>
+                        <option value="bad-mergentheim">Bad Mergentheim</option>
+                        <option value="igersheim">Igersheim</option>
+                        <option value="egal">Keine Präferenz</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Betreff <span class="required" aria-label="Pflichtfeld">*</span></label>
+                    <select id="subject" name="subject" required aria-required="true">
+                        <option value="">Bitte wählen...</option>
+                        <option value="familienrecht">Familienrecht</option>
+                        <option value="erbrecht">Erbrecht</option>
+                        <option value="strafrecht">Strafrecht</option>
+                        <option value="arbeitsrecht">Arbeitsrecht</option>
+                        <option value="mietrecht">Mietrecht</option>
+                        <option value="zivilrecht">Allgemeines Zivilrecht</option>
+                        <option value="sonstiges">Sonstiges</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Ihre Nachricht <span class="required" aria-label="Pflichtfeld">*</span></label>
+                    <textarea id="message" name="message" required aria-required="true"></textarea>
+                </div>
+
+                <!-- Honeypot -->
+                <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="privacy" required aria-required="true">
+                        Ich habe die <a href="#datenschutz-link" onclick="openModal('datenschutz-modal'); return false;">Datenschutzerklärung</a> gelesen und akzeptiere diese. <span class="required">*</span>
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn">Nachricht senden</button>
+                </div>
+            </form>
+
+            <div class="info-box">
+                <h3>Kontaktinformationen</h3>
+                <p><strong>Kanzlei Himmelsbach & Kollegen</strong></p>
+
+                <p><strong>Standort Bad Mergentheim:</strong><br>
+                Mühlwehrstraße 33, 97980 Bad Mergentheim</p>
+
+                <p><strong>Standort Igersheim:</strong><br>
+                Steigerwaldstraße 27, 97999 Igersheim</p>
+
+                <p><strong>Telefon:</strong> +49 7931 6178 / +49 7931 561124<br>
+                <strong>Telefax:</strong> +49 7931 51422<br>
+                <strong>E-Mail:</strong> rae.himmelsbach@t-online.de<br>
+                <strong>Website:</strong> <a href="https://www.kanzlei-himmelsbach.de" target="_blank" rel="noopener">www.kanzlei-himmelsbach.de</a></p>
+
+                <p><strong>Öffnungszeiten:</strong><br>
+                Montag - Freitag: 08:00 - 17:00 Uhr<br>
+                Termine auch außerhalb der Öffnungszeiten nach Vereinbarung möglich</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Kanzlei Himmelsbach & Kollegen</h3>
+                <p>Ihre Rechtsanwaltskanzlei<br>in Bad Mergentheim & Igersheim</p>
+                <p style="margin-top: 1rem;">Kompetente Rechtsberatung<br>seit vielen Jahren</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Fachgebiete</h3>
+                <ul>
+                    <li><a href="#fachgebiete">Familienrecht</a></li>
+                    <li><a href="#fachgebiete">Erbrecht</a></li>
+                    <li><a href="#fachgebiete">Strafrecht</a></li>
+                    <li><a href="#fachgebiete">Arbeitsrecht</a></li>
+                    <li><a href="#fachgebiete">Mietrecht</a></li>
+                    <li><a href="#fachgebiete">Zivilrecht</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Rechtliches</h3>
+                <ul>
+                    <li><a href="#impressum-link" onclick="openModal('impressum-modal'); return false;">Impressum</a></li>
+                    <li><a href="#datenschutz-link" onclick="openModal('datenschutz-modal'); return false;">Datenschutz</a></li>
+                    <li><a href="#" onclick="reopenCookieBanner(); return false;">Cookie-Einstellungen</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p><strong>Bad Mergentheim:</strong><br>
+                Mühlwehrstraße 33<br>
+                97980 Bad Mergentheim</p>
+                <p><strong>Igersheim:</strong><br>
+                Steigerwaldstraße 27<br>
+                97999 Igersheim</p>
+                <p>Tel: +49 7931 6178<br>
+                Fax: +49 7931 51422<br>
+                rae.himmelsbach@t-online.de</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Kanzlei Himmelsbach & Kollegen. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <!-- Impressum Modal -->
+    <div id="impressum-modal" class="modal" role="dialog" aria-labelledby="impressum-title" aria-modal="true">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('impressum-modal')" aria-label="Modal schließen">&times;</button>
+            <div class="impressum-content">
+                <h2 id="impressum-title">Impressum</h2>
+
+                <h3>Angaben gemäß § 5 TMG</h3>
+                <p><strong>Kanzlei Himmelsbach & Kollegen</strong><br>
+                Rechtsanwälte</p>
+
+                <p><strong>Standort Bad Mergentheim:</strong><br>
+                Mühlwehrstraße 33<br>
+                97980 Bad Mergentheim</p>
+
+                <p><strong>Standort Igersheim:</strong><br>
+                Steigerwaldstraße 27<br>
+                97999 Igersheim</p>
+
+                <h3>Vertreten durch</h3>
+                <p>Rechtsanwalt Fritz Himmelsbach<br>
+                Rechtsanwalt Burkhard Müssig<br>
+                Rechtsanwalt Stephan Himmelsbach</p>
+
+                <h3>Kontakt</h3>
+                <p>Telefon: +49 (0) 7931 6178<br>
+                Telefon alternativ: +49 (0) 7931 561124<br>
+                Telefax: +49 (0) 7931 51422<br>
+                E-Mail: rae.himmelsbach@t-online.de<br>
+                Internet: <a href="https://www.kanzlei-himmelsbach.de" target="_blank" rel="noopener">www.kanzlei-himmelsbach.de</a></p>
+
+                <h3>Berufsbezeichnung</h3>
+                <p>Rechtsanwalt (verliehen in der Bundesrepublik Deutschland)</p>
+
+                <h3>Zuständige Rechtsanwaltskammer</h3>
+                <p>Rechtsanwaltskammer Stuttgart<br>
+                Königstraße 14<br>
+                70173 Stuttgart<br>
+                Tel: +49 (0) 711 22681-0<br>
+                Web: <a href="https://www.rechtsanwaltskammer-stuttgart.de" target="_blank" rel="noopener">www.rechtsanwaltskammer-stuttgart.de</a></p>
+
+                <h3>Berufsrechtliche Regelungen</h3>
+                <p>Folgende berufsrechtliche Regelungen gelten:</p>
+                <ul>
+                    <li>Bundesrechtsanwaltsordnung (BRAO)</li>
+                    <li>Berufsordnung für Rechtsanwälte (BORA)</li>
+                    <li>Fachanwaltsordnung (FAO)</li>
+                    <li>Rechtsanwaltsvergütungsgesetz (RVG)</li>
+                    <li>Berufsregeln der Rechtsanwälte der Europäischen Gemeinschaft (CCBE)</li>
+                </ul>
+                <p>Die Regelungen können eingesehen werden unter: <a href="https://www.brak.de" target="_blank" rel="noopener">www.brak.de</a></p>
+
+                <h3>Berufshaftpflichtversicherung</h3>
+                <p>Es besteht eine Berufshaftpflichtversicherung bei:<br>
+                (Name und Anschrift der Versicherungsgesellschaft auf Anfrage)<br>
+                Geltungsbereich: Deutschland</p>
+
+                <h3>Hinweis gemäß § 36 Verbraucherstreitbeilegungsgesetz (VSBG)</h3>
+                <p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.<br><br>
+                Zuständige Schlichtungsstelle für Anwälte ist die Schlichtungsstelle der Rechtsanwaltschaft:<br>
+                Neue Grünstraße 17<br>
+                10179 Berlin<br>
+                Web: <a href="https://www.s-d-r.org" target="_blank" rel="noopener">www.s-d-r.org</a></p>
+
+                <h3>Haftungsausschluss</h3>
+                <h4>Haftung für Inhalte</h4>
+                <p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.</p>
+
+                <h4>Haftung für Links</h4>
+                <p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben.</p>
+
+                <h4>Urheberrecht</h4>
+                <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Datenschutz Modal -->
+    <div id="datenschutz-modal" class="modal" role="dialog" aria-labelledby="datenschutz-title" aria-modal="true">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('datenschutz-modal')" aria-label="Modal schließen">&times;</button>
+            <div class="impressum-content">
+                <h2 id="datenschutz-title">Datenschutzerklärung</h2>
+
+                <h3>1. Datenschutz auf einen Blick</h3>
+                <h4>Allgemeine Hinweise</h4>
+                <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.</p>
+
+                <h4>Verantwortliche Stelle</h4>
+                <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:<br><br>
+                Kanzlei Himmelsbach & Kollegen<br>
+                Mühlwehrstraße 33<br>
+                97980 Bad Mergentheim<br>
+                Telefon: +49 7931 6178<br>
+                E-Mail: rae.himmelsbach@t-online.de</p>
+
+                <h3>2. Datenerfassung auf dieser Website</h3>
+                <h4>Kontaktformular</h4>
+                <p>Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert.</p>
+
+                <h3>3. Ihre Rechte</h3>
+                <p>Sie haben folgende Rechte:</p>
+                <ul>
+                    <li>Recht auf Auskunft nach Art. 15 DSGVO</li>
+                    <li>Recht auf Berichtigung nach Art. 16 DSGVO</li>
+                    <li>Recht auf Löschung nach Art. 17 DSGVO</li>
+                    <li>Recht auf Einschränkung der Verarbeitung nach Art. 18 DSGVO</li>
+                    <li>Recht auf Datenübertragbarkeit nach Art. 20 DSGVO</li>
+                    <li>Widerspruchsrecht nach Art. 21 DSGVO</li>
+                    <li>Recht auf Beschwerde bei einer Aufsichtsbehörde nach Art. 77 DSGVO</li>
+                </ul>
+
+                <p><strong>Stand: Januar 2026</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner active" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-description">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <strong id="cookie-title">Cookie-Hinweis</strong>
+                <p id="cookie-description">Diese Website verwendet nur technisch notwendige Cookies, um die Funktionalität der Website zu gewährleisten. Es werden keine Tracking- oder Marketing-Cookies eingesetzt. Weitere Informationen finden Sie in unserer <a href="#datenschutz-link" onclick="openModal('datenschutz-modal'); return false;">Datenschutzerklärung</a>.</p>
+            </div>
+            <div class="cookie-actions">
+                <button class="cookie-btn cookie-accept" onclick="acceptCookies()">Verstanden</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Modal Functions
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                const closeBtn = modal.querySelector('.modal-close');
+                if (closeBtn) {
+                    setTimeout(() => closeBtn.focus(), 100);
+                }
+            }
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        };
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const modals = document.querySelectorAll('.modal.active');
+                modals.forEach(modal => {
+                    modal.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            }
+        });
+
+        // Cookie Banner
+        function acceptCookies() {
+            localStorage.setItem('cookiesAccepted', 'true');
+            const banner = document.getElementById('cookie-banner');
+            if (banner) {
+                banner.classList.remove('active');
+            }
+        }
+
+        function reopenCookieBanner() {
+            localStorage.removeItem('cookiesAccepted');
+            const banner = document.getElementById('cookie-banner');
+            if (banner) {
+                banner.classList.add('active');
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', function() {
+            const cookiesAccepted = localStorage.getItem('cookiesAccepted');
+            const banner = document.getElementById('cookie-banner');
+
+            if (cookiesAccepted === 'true' && banner) {
+                banner.classList.remove('active');
+            }
+        });
+
+        // Form Handling
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            const honeypot = document.querySelector('input[name="website"]');
+            if (honeypot && honeypot.value !== '') {
+                console.log('Spam detected');
+                return false;
+            }
+
+            const form = event.target;
+            const formData = new FormData(form);
+
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+            const privacy = formData.get('privacy');
+
+            if (!name || !email || !subject || !message || !privacy) {
+                alert('Bitte füllen Sie alle Pflichtfelder aus.');
+                return false;
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Bitte geben Sie eine gültige E-Mail-Adresse ein.');
+                return false;
+            }
+
+            alert('Vielen Dank für Ihre Nachricht! Wir werden uns schnellstmöglich bei Ihnen melden.\n\n(Dies ist eine Demo-Implementierung. In einer Produktivumgebung würde das Formular an einen Server gesendet.)');
+            form.reset();
+
+            return false;
+        }
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#impressum-link' || href === '#datenschutz-link' || href === '#') {
+                    return;
+                }
+
+                e.preventDefault();
+                const targetId = href.substring(1);
+                const target = document.getElementById(targetId);
+
+                if (target) {
+                    const headerHeight = document.querySelector('header').offsetHeight;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
+
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
