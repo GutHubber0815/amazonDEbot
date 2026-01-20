@@ -3,33 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Anwaltskanzlei Dr. Himmelsbach & Partner in Mannheim - Seit 1969 Ihre Experten für Bau- und Immobilienrecht, Erb- und Familienrecht, Gesellschafts- und Steuerrecht sowie Arbeitsrecht.">
-    <meta name="keywords" content="Rechtsanwalt Mannheim, Fachanwalt Baurecht, Immobilienrecht, Familienrecht, Erbrecht, Steuerrecht Mannheim, Dr. Himmelsbach">
-    <meta name="author" content="Anwaltskanzlei Dr. Himmelsbach & Partner GbR">
+    <meta name="description" content="Kanzlei Himmelsbach & Kollegen in Bad Mergentheim und Igersheim - Ihre Experten für Familienrecht, Erbrecht, Strafrecht, Arbeitsrecht und Mietrecht. Kompetente Rechtsberatung seit Jahren.">
+    <meta name="keywords" content="Rechtsanwalt Bad Mergentheim, Rechtsanwalt Igersheim, Familienrecht, Erbrecht, Strafrecht, Arbeitsrecht, Mietrecht, Stephan Himmelsbach, Fritz Himmelsbach">
+    <meta name="author" content="Kanzlei Himmelsbach & Kollegen">
     <meta name="robots" content="index, follow">
-    <title>Anwaltskanzlei Dr. Himmelsbach & Partner Mannheim | Bau-, Immobilien-, Erb-, Familien-, Gesellschafts-, Steuer- und Arbeitsrecht</title>
+    <title>Kanzlei Himmelsbach & Kollegen | Rechtsanwälte in Bad Mergentheim & Igersheim</title>
 
     <!-- Strukturierte Daten für LocalBusiness -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "LegalService",
-        "name": "Anwaltskanzlei Dr. Himmelsbach & Partner GbR",
+        "name": "Kanzlei Himmelsbach & Kollegen",
         "image": "",
-        "address": {
+        "address": [{
             "@type": "PostalAddress",
-            "streetAddress": "Goethestraße 6",
-            "addressLocality": "Mannheim",
-            "postalCode": "68161",
+            "streetAddress": "Mühlwehrstraße 33",
+            "addressLocality": "Bad Mergentheim",
+            "postalCode": "97980",
             "addressCountry": "DE"
-        },
-        "telephone": "+49-621-104080",
-        "faxNumber": "+49-621-104327",
-        "email": "info@anwaelte-dr-himmelsbach.de",
-        "url": "https://www.anwaelte-dr-himmelsbach.de",
+        }, {
+            "@type": "PostalAddress",
+            "streetAddress": "Steigerwaldstraße 27",
+            "addressLocality": "Igersheim",
+            "postalCode": "97999",
+            "addressCountry": "DE"
+        }],
+        "telephone": "+49-7931-6178",
+        "faxNumber": "+49-7931-51422",
+        "email": "rae.himmelsbach@t-online.de",
+        "url": "https://www.kanzlei-himmelsbach.de",
         "priceRange": "$$",
-        "openingHours": "Mo-Fr 08:00-17:00",
-        "foundingDate": "1969"
+        "openingHours": "Mo-Fr 08:00-17:00"
     }
     </script>
 
@@ -42,14 +47,14 @@
         }
 
         :root {
-            --primary-color: #003366;
-            --secondary-color: #0066cc;
-            --accent-color: #b8860b;
-            --text-color: #333333;
+            --primary-color: #1a4d7a;
+            --secondary-color: #2874a6;
+            --accent-color: #c89f5d;
+            --text-color: #2c3e50;
             --bg-color: #ffffff;
             --light-bg: #f8f9fa;
-            --border-color: #e0e0e0;
-            --focus-color: #0056b3;
+            --border-color: #dee2e6;
+            --focus-color: #2874a6;
             --success-color: #28a745;
             --error-color: #dc3545;
         }
@@ -59,8 +64,8 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+            line-height: 1.7;
             color: var(--text-color);
             background-color: var(--bg-color);
             font-size: 16px;
@@ -69,25 +74,27 @@
         /* Skip Link für Barrierefreiheit */
         .skip-link {
             position: absolute;
-            top: -40px;
+            top: -50px;
             left: 0;
             background: var(--primary-color);
             color: white;
-            padding: 8px 16px;
+            padding: 10px 20px;
             text-decoration: none;
             z-index: 100;
+            font-weight: 600;
         }
 
         .skip-link:focus {
             top: 0;
             outline: 3px solid var(--accent-color);
+            outline-offset: 2px;
         }
 
         /* Header & Navigation */
         header {
             background-color: var(--primary-color);
             color: white;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
             position: sticky;
             top: 0;
             z-index: 50;
@@ -96,121 +103,172 @@
         .header-content {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 1rem;
+            padding: 1.25rem 1.5rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            gap: 1rem;
         }
 
         .logo h1 {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             font-weight: 700;
             margin: 0;
+            letter-spacing: -0.5px;
         }
 
         nav ul {
             list-style: none;
             display: flex;
-            gap: 1.5rem;
+            gap: 2rem;
             flex-wrap: wrap;
+            align-items: center;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            padding: 0.5rem;
-            transition: color 0.3s ease;
+            padding: 0.6rem 0.3rem;
+            transition: all 0.3s ease;
             font-weight: 500;
+            border-bottom: 2px solid transparent;
         }
 
         nav a:hover, nav a:focus {
+            border-bottom-color: var(--accent-color);
             color: var(--accent-color);
-            outline: 2px solid var(--accent-color);
-            outline-offset: 2px;
+            outline: none;
         }
 
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
             color: white;
-            padding: 4rem 1rem;
+            padding: 5rem 1.5rem;
             text-align: center;
         }
 
         .hero-content {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
         .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
             line-height: 1.2;
+            font-weight: 700;
         }
 
         .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
             opacity: 0.95;
+            line-height: 1.6;
         }
 
         .btn {
             display: inline-block;
-            padding: 0.875rem 2rem;
+            padding: 1rem 2.5rem;
             background-color: var(--accent-color);
             color: white;
             text-decoration: none;
-            border-radius: 4px;
-            font-weight: 600;
+            border-radius: 5px;
+            font-weight: 700;
             transition: all 0.3s ease;
             border: 2px solid transparent;
             cursor: pointer;
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
 
         .btn:hover, .btn:focus {
-            background-color: #9a7209;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            background-color: #b48f4d;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
             outline: 2px solid var(--accent-color);
-            outline-offset: 2px;
+            outline-offset: 3px;
         }
 
         /* Container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 3rem 1rem;
+            padding: 4rem 1.5rem;
+        }
+
+        /* Standorte Section */
+        .standorte-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .standort-card {
+            background: var(--light-bg);
+            padding: 2.5rem;
+            border-radius: 10px;
+            border: 2px solid var(--border-color);
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+        }
+
+        .standort-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            border-color: var(--secondary-color);
+        }
+
+        .standort-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 0.75rem;
+        }
+
+        .standort-card p {
+            margin-bottom: 0.75rem;
+            line-height: 1.8;
+        }
+
+        .standort-card strong {
+            color: var(--primary-color);
         }
 
         /* Fachgebiete Grid */
         .fachgebiete-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-top: 2.5rem;
         }
 
         .fachgebiet-card {
             background: var(--light-bg);
-            padding: 2rem;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
+            padding: 2.5rem;
+            border-radius: 10px;
+            border: 2px solid var(--border-color);
             transition: all 0.3s ease;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            box-shadow: 0 3px 8px rgba(0,0,0,0.08);
         }
 
         .fachgebiet-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
             border-color: var(--secondary-color);
         }
 
         .fachgebiet-card h3 {
             color: var(--primary-color);
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
+            font-size: 1.6rem;
+        }
+
+        .fachgebiet-card p {
+            margin-bottom: 1.25rem;
+            line-height: 1.8;
         }
 
         .fachgebiet-card ul {
@@ -219,9 +277,10 @@
         }
 
         .fachgebiet-card li {
-            padding: 0.5rem 0;
-            padding-left: 1.5rem;
+            padding: 0.6rem 0;
+            padding-left: 2rem;
             position: relative;
+            line-height: 1.6;
         }
 
         .fachgebiet-card li::before {
@@ -230,64 +289,113 @@
             left: 0;
             color: var(--success-color);
             font-weight: bold;
+            font-size: 1.2rem;
         }
 
         /* Section Styling */
         section {
-            margin-bottom: 3rem;
+            margin-bottom: 4rem;
         }
 
         section h2 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             color: var(--primary-color);
-            margin-bottom: 1.5rem;
-            border-bottom: 3px solid var(--accent-color);
-            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+            border-bottom: 4px solid var(--accent-color);
+            padding-bottom: 0.75rem;
+        }
+
+        section p {
+            line-height: 1.8;
+            margin-bottom: 1.25rem;
+        }
+
+        /* Team Section */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .team-member {
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            border: 2px solid var(--border-color);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .team-member h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .team-member .title {
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .team-member p {
+            text-align: left;
+            margin-top: 1rem;
         }
 
         /* Kontaktformular */
         .contact-form {
-            max-width: 600px;
-            margin: 2rem auto;
+            max-width: 700px;
+            margin: 2.5rem auto;
             background: var(--light-bg);
-            padding: 2rem;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
+            padding: 3rem;
+            border-radius: 10px;
+            border: 2px solid var(--border-color);
+            box-shadow: 0 3px 8px rgba(0,0,0,0.08);
         }
 
         .form-group {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.75rem;
         }
 
         label {
             display: block;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.6rem;
             font-weight: 600;
             color: var(--primary-color);
+            font-size: 1.05rem;
         }
 
         label .required {
             color: var(--error-color);
+            font-weight: bold;
         }
 
         input, textarea, select {
             width: 100%;
-            padding: 0.75rem;
+            padding: 0.9rem;
             border: 2px solid var(--border-color);
-            border-radius: 4px;
+            border-radius: 5px;
             font-size: 1rem;
             font-family: inherit;
-            transition: border-color 0.3s ease;
+            transition: all 0.3s ease;
         }
 
         input:focus, textarea:focus, select:focus {
             outline: none;
             border-color: var(--secondary-color);
-            box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+            box-shadow: 0 0 0 3px rgba(40, 116, 166, 0.1);
         }
 
         textarea {
-            min-height: 150px;
+            min-height: 180px;
             resize: vertical;
         }
 
@@ -301,19 +409,39 @@
         .form-actions {
             display: flex;
             gap: 1rem;
-            margin-top: 2rem;
+            margin-top: 2.5rem;
         }
 
         button[type="submit"] {
             flex: 1;
         }
 
+        /* Info Box */
+        .info-box {
+            margin-top: 3rem;
+            padding: 2.5rem;
+            background: var(--light-bg);
+            border-radius: 10px;
+            border-left: 5px solid var(--accent-color);
+            box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+        }
+
+        .info-box h3 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .info-box p {
+            margin-bottom: 0.75rem;
+        }
+
         /* Footer */
         footer {
             background-color: var(--primary-color);
             color: white;
-            padding: 3rem 1rem 1rem;
-            margin-top: 4rem;
+            padding: 4rem 1.5rem 1.5rem;
+            margin-top: 5rem;
         }
 
         .footer-content {
@@ -321,13 +449,14 @@
             margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
+            gap: 3rem;
+            margin-bottom: 2.5rem;
         }
 
         .footer-section h3 {
-            margin-bottom: 1rem;
+            margin-bottom: 1.25rem;
             color: var(--accent-color);
+            font-size: 1.4rem;
         }
 
         .footer-section ul {
@@ -335,13 +464,13 @@
         }
 
         .footer-section li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
         }
 
         .footer-section a {
             color: white;
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: all 0.3s ease;
         }
 
         .footer-section a:hover, .footer-section a:focus {
@@ -353,7 +482,7 @@
             text-align: center;
             padding-top: 2rem;
             border-top: 1px solid rgba(255,255,255,0.2);
-            font-size: 0.9rem;
+            font-size: 0.95rem;
         }
 
         /* Modal */
@@ -366,7 +495,7 @@
             width: 100%;
             height: 100%;
             overflow: auto;
-            background-color: rgba(0,0,0,0.7);
+            background-color: rgba(0,0,0,0.75);
         }
 
         .modal.active {
@@ -377,21 +506,21 @@
 
         .modal-content {
             background-color: white;
-            margin: auto;
-            padding: 2rem;
-            border-radius: 8px;
-            max-width: 800px;
+            margin: 2rem auto;
+            padding: 3rem;
+            border-radius: 10px;
+            max-width: 900px;
             max-height: 90vh;
             overflow-y: auto;
             position: relative;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
         }
 
         .modal-close {
             position: absolute;
-            right: 1rem;
-            top: 1rem;
-            font-size: 2rem;
+            right: 1.5rem;
+            top: 1.5rem;
+            font-size: 2.5rem;
             font-weight: bold;
             color: var(--text-color);
             cursor: pointer;
@@ -399,11 +528,13 @@
             border: none;
             padding: 0.5rem;
             line-height: 1;
+            transition: all 0.3s ease;
         }
 
         .modal-close:hover, .modal-close:focus {
             color: var(--error-color);
             outline: 2px solid var(--focus-color);
+            outline-offset: 3px;
         }
 
         /* Cookie Banner */
@@ -414,8 +545,8 @@
             right: 0;
             background-color: var(--primary-color);
             color: white;
-            padding: 1.5rem;
-            box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+            padding: 2rem;
+            box-shadow: 0 -4px 15px rgba(0,0,0,0.25);
             z-index: 999;
             display: none;
         }
@@ -429,13 +560,18 @@
             margin: 0 auto;
             display: flex;
             align-items: center;
-            gap: 2rem;
+            gap: 2.5rem;
             flex-wrap: wrap;
         }
 
         .cookie-text {
             flex: 1;
             min-width: 300px;
+        }
+
+        .cookie-text a {
+            color: var(--accent-color);
+            text-decoration: underline;
         }
 
         .cookie-actions {
@@ -445,11 +581,11 @@
         }
 
         .cookie-btn {
-            padding: 0.75rem 1.5rem;
+            padding: 0.9rem 2rem;
             border: none;
-            border-radius: 4px;
+            border-radius: 5px;
             cursor: pointer;
-            font-weight: 600;
+            font-weight: 700;
             transition: all 0.3s ease;
             font-size: 1rem;
         }
@@ -460,7 +596,7 @@
         }
 
         .cookie-accept:hover, .cookie-accept:focus {
-            background-color: #9a7209;
+            background-color: #b48f4d;
             outline: 2px solid white;
             outline-offset: 2px;
         }
@@ -472,7 +608,7 @@
         }
 
         .cookie-decline:hover, .cookie-decline:focus {
-            background-color: rgba(255,255,255,0.1);
+            background-color: rgba(255,255,255,0.15);
             outline: 2px solid white;
             outline-offset: 2px;
         }
@@ -480,42 +616,62 @@
         /* Impressum Styling */
         .impressum-content h3 {
             color: var(--primary-color);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .impressum-content h4 {
+            color: var(--secondary-color);
             margin-top: 1.5rem;
             margin-bottom: 0.75rem;
         }
 
         .impressum-content p {
-            margin-bottom: 0.75rem;
-            line-height: 1.8;
+            margin-bottom: 1rem;
+            line-height: 1.9;
+        }
+
+        .impressum-content ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .impressum-content li {
+            margin-bottom: 0.5rem;
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
             .hero h2 {
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
 
             .hero p {
-                font-size: 1rem;
+                font-size: 1.1rem;
+            }
+
+            section h2 {
+                font-size: 2rem;
             }
 
             .header-content {
                 flex-direction: column;
-                gap: 1rem;
+                gap: 1.5rem;
             }
 
             nav ul {
                 flex-direction: column;
-                gap: 0.5rem;
+                gap: 0.75rem;
                 width: 100%;
+                text-align: center;
             }
 
             nav a {
                 display: block;
-                text-align: center;
             }
 
-            .fachgebiete-grid {
+            .fachgebiete-grid, .standorte-grid, .team-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -530,11 +686,20 @@
             .cookie-btn {
                 flex: 1;
             }
+
+            .contact-form {
+                padding: 2rem;
+            }
+
+            .modal-content {
+                padding: 2rem;
+                margin: 1rem;
+            }
         }
 
         /* Print Styles */
         @media print {
-            header, .cookie-banner, .modal {
+            header, .cookie-banner, .modal, .btn {
                 display: none;
             }
 
@@ -544,6 +709,11 @@
 
             a {
                 text-decoration: underline;
+            }
+
+            .hero {
+                background: white;
+                color: black;
             }
         }
 
@@ -556,7 +726,7 @@
             }
 
             .btn, .cookie-accept {
-                border: 2px solid white;
+                border: 3px solid white;
             }
         }
 
@@ -566,6 +736,7 @@
                 animation-duration: 0.01ms !important;
                 animation-iteration-count: 1 !important;
                 transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
             }
         }
     </style>
@@ -578,12 +749,13 @@
     <header role="banner">
         <div class="header-content">
             <div class="logo">
-                <h1>Dr. Himmelsbach & Partner</h1>
+                <h1>Kanzlei Himmelsbach & Kollegen</h1>
             </div>
             <nav role="navigation" aria-label="Hauptnavigation">
                 <ul>
+                    <li><a href="#standorte">Standorte</a></li>
                     <li><a href="#fachgebiete">Fachgebiete</a></li>
-                    <li><a href="#team">Über uns</a></li>
+                    <li><a href="#team">Team</a></li>
                     <li><a href="#kontakt">Kontakt</a></li>
                     <li><a href="#impressum-link" onclick="openModal('impressum-modal'); return false;">Impressum</a></li>
                     <li><a href="#datenschutz-link" onclick="openModal('datenschutz-modal'); return false;">Datenschutz</a></li>
@@ -595,102 +767,199 @@
     <!-- Hero Section -->
     <section class="hero" role="banner">
         <div class="hero-content">
-            <h2>Ihre kompetente Rechtsberatung in Mannheim</h2>
-            <p>Seit 1969 beraten wir Sie in allen rechtlichen Angelegenheiten mit Expertise und Engagement. Über 55 Jahre Erfahrung für Ihren Erfolg.</p>
+            <h2>Ihre kompetente Rechtsberatung in Bad Mergentheim & Igersheim</h2>
+            <p>Erfahrene Rechtsanwälte für Familienrecht, Erbrecht, Strafrecht, Arbeitsrecht und Mietrecht. Persönliche Beratung an zwei Standorten.</p>
             <a href="#kontakt" class="btn" role="button">Jetzt Termin vereinbaren</a>
         </div>
     </section>
 
     <!-- Main Content -->
     <main id="main-content" role="main">
+        <!-- Standorte -->
+        <section id="standorte" class="container">
+            <h2>Unsere Standorte</h2>
+            <div class="standorte-grid">
+                <article class="standort-card">
+                    <h3>Bad Mergentheim</h3>
+                    <p><strong>Adresse:</strong><br>
+                    Mühlwehrstraße 33<br>
+                    97980 Bad Mergentheim</p>
+                    <p><strong>Telefon:</strong> +49 7931 6178<br>
+                    <strong>Telefon alternativ:</strong> +49 7931 561124<br>
+                    <strong>Telefax:</strong> +49 7931 51422</p>
+                    <p><strong>E-Mail:</strong> rae.himmelsbach@t-online.de</p>
+                    <p><strong>Öffnungszeiten:</strong><br>
+                    Montag - Freitag: 08:00 - 17:00 Uhr<br>
+                    Termine nach Vereinbarung</p>
+                </article>
+
+                <article class="standort-card">
+                    <h3>Igersheim</h3>
+                    <p><strong>Adresse:</strong><br>
+                    Steigerwaldstraße 27<br>
+                    97999 Igersheim</p>
+                    <p><strong>Telefon:</strong> +49 7931 6178<br>
+                    <strong>Telefon alternativ:</strong> +49 7931 561124<br>
+                    <strong>Telefax:</strong> +49 7931 51422</p>
+                    <p><strong>E-Mail:</strong> rae.himmelsbach@t-online.de</p>
+                    <p><strong>Öffnungszeiten:</strong><br>
+                    Montag - Freitag: 08:00 - 17:00 Uhr<br>
+                    Termine nach Vereinbarung</p>
+                </article>
+            </div>
+        </section>
+
         <!-- Fachgebiete -->
         <section id="fachgebiete" class="container">
             <h2>Unsere Fachgebiete</h2>
             <div class="fachgebiete-grid">
                 <article class="fachgebiet-card">
-                    <h3>Bau- und Immobilienrecht</h3>
-                    <p>Spezialisierte Beratung rund um Bau- und Immobilienprojekte.</p>
+                    <h3>Familienrecht</h3>
+                    <p>Einfühlsame Beratung in allen familienrechtlichen Angelegenheiten mit Schwerpunkt auf individueller Lösungsfindung.</p>
                     <ul>
-                        <li>Bauvertragsrecht & VOB</li>
-                        <li>Mängelbeseitigung & Gewährleistung</li>
-                        <li>Immobilienkauf & -verkauf</li>
-                        <li>Bauträgerrecht</li>
-                        <li>Architekten- & Ingenieurverträge</li>
+                        <li>Scheidung & Trennung</li>
+                        <li>Sorgerecht & Umgangsrecht</li>
+                        <li>Unterhalt (Kindes-, Ehegatten-, Elternunterhalt)</li>
+                        <li>Zugewinnausgleich & Versorgungsausgleich</li>
+                        <li>Ehevertrag & Scheidungsfolgenvereinbarung</li>
+                        <li>Adoption & Vaterschaftsanerkennung</li>
                     </ul>
                 </article>
 
                 <article class="fachgebiet-card">
-                    <h3>Erb- und Familienrecht</h3>
-                    <p>Einfühlsame Beratung in sensiblen Familien- und Erbschaftsangelegenheiten.</p>
+                    <h3>Erbrecht</h3>
+                    <p>Kompetente Beratung bei Nachlass, Testament und Erbstreitigkeiten für eine rechtssichere Vermögensnachfolge.</p>
                     <ul>
                         <li>Testamentsgestaltung & Erbverträge</li>
+                        <li>Erbauseinandersetzung & Erbteilsstreitigkeiten</li>
+                        <li>Pflichtteilsansprüche</li>
+                        <li>Vorsorgevollmacht & Betreuungsverfügung</li>
                         <li>Erbschaftssteuer & Schenkungen</li>
-                        <li>Scheidung & Trennung</li>
-                        <li>Sorgerecht & Unterhalt</li>
-                        <li>Ehevertrag & Zugewinnausgleich</li>
+                        <li>Nachlassverwaltung & Testamentsvollstreckung</li>
                     </ul>
                 </article>
 
                 <article class="fachgebiet-card">
-                    <h3>Gesellschafts- und Steuerrecht</h3>
-                    <p>Umfassende Beratung für Unternehmen und Gesellschaften.</p>
+                    <h3>Strafrecht</h3>
+                    <p>Verteidigung in allen strafrechtlichen Verfahren - vom Ermittlungsverfahren bis zum Gerichtsprozess.</p>
                     <ul>
-                        <li>Unternehmensgründung (GmbH, UG, AG)</li>
-                        <li>Gesellschaftsverträge & Satzungen</li>
-                        <li>Unternehmenskauf & -verkauf (M&A)</li>
-                        <li>Steuergestaltung & -optimierung</li>
-                        <li>Steuerstrafrecht & Selbstanzeigen</li>
+                        <li>Strafverteidigung vor Gericht</li>
+                        <li>Verkehrsstrafrecht (MPU, Fahrverbot)</li>
+                        <li>Betäubungsmittelstrafrecht</li>
+                        <li>Wirtschaftsstrafrecht</li>
+                        <li>Opfervertretung & Nebenklage</li>
+                        <li>Ordnungswidrigkeiten & Bußgeldverfahren</li>
                     </ul>
                 </article>
 
                 <article class="fachgebiet-card">
                     <h3>Arbeitsrecht</h3>
-                    <p>Wir vertreten Sie in allen arbeitsrechtlichen Angelegenheiten.</p>
+                    <p>Beratung und Vertretung für Arbeitnehmer und Arbeitgeber in allen arbeitsrechtlichen Fragen.</p>
                     <ul>
                         <li>Kündigungsschutz & Abfindungen</li>
                         <li>Arbeitsverträge & Aufhebungsverträge</li>
-                        <li>Abmahnungen & Betriebsrat</li>
+                        <li>Abmahnungen & Zeugnisse</li>
                         <li>Überstunden & Urlaubsansprüche</li>
+                        <li>Betriebsrat & Betriebsvereinbarungen</li>
                         <li>Arbeitsgerichtsprozesse</li>
+                    </ul>
+                </article>
+
+                <article class="fachgebiet-card">
+                    <h3>Mietrecht</h3>
+                    <p>Umfassende Beratung für Mieter und Vermieter bei allen mietrechtlichen Auseinandersetzungen.</p>
+                    <ul>
+                        <li>Nebenkostenabrechnungen</li>
+                        <li>Mietminderung bei Mängeln</li>
+                        <li>Kündigung & Räumungsklage</li>
+                        <li>Mieterhöhungen & Mietpreisbremse</li>
+                        <li>Betriebskosten & Kaution</li>
+                        <li>Gewerbemietrecht</li>
+                    </ul>
+                </article>
+
+                <article class="fachgebiet-card">
+                    <h3>Allgemeines Zivilrecht</h3>
+                    <p>Beratung und Vertretung in allen zivilrechtlichen Angelegenheiten und Schadensregulierung.</p>
+                    <ul>
+                        <li>Vertragsrecht & Vertragsgestaltung</li>
+                        <li>Schadensersatzansprüche</li>
+                        <li>Kaufrecht & Gewährleistung</li>
+                        <li>Nachbarschaftsrecht</li>
+                        <li>Forderungseinzug & Inkasso</li>
+                        <li>Außergerichtliche Streitschlichtung</li>
                     </ul>
                 </article>
             </div>
         </section>
 
-        <!-- Über uns -->
+        <!-- Team -->
         <section id="team" class="container">
-            <h2>Über uns</h2>
-            <p>Die Anwaltskanzlei Dr. Himmelsbach & Partner wurde 1969 von Dr. Kurt W. Himmelsbach gegründet und hat sich über mehr als fünf Jahrzehnte als renommierte Kanzlei in Mannheim etabliert. Unser erfahrenes Team aus Fachanwälten berät und vertritt Mandanten in den Bereichen Bau- und Immobilienrecht, Erb- und Familienrecht, Gesellschafts- und Steuerrecht sowie Arbeitsrecht.</p>
-            <p>Mit über 55 Jahren Erfahrung stehen wir für höchste fachliche Kompetenz und persönliche Betreuung. Wir legen großen Wert auf eine mandantenorientierte Beratung und entwickeln individuelle Lösungsstrategien für Ihre rechtlichen Herausforderungen. Vertrauen, Transparenz und Erfolg stehen im Mittelpunkt unserer Arbeit.</p>
+            <h2>Unser Team</h2>
+            <p>Unsere erfahrenen Rechtsanwälte beraten Sie kompetent und persönlich in allen rechtlichen Angelegenheiten. Mit langjähriger Erfahrung und Engagement setzen wir uns für Ihre Interessen ein.</p>
+
+            <div class="team-grid">
+                <article class="team-member">
+                    <h3>Fritz Himmelsbach</h3>
+                    <p class="title">Rechtsanwalt</p>
+                    <p>Langjährige Erfahrung in der Rechtsberatung mit Schwerpunkt auf zivilrechtlichen Mandaten.</p>
+                </article>
+
+                <article class="team-member">
+                    <h3>Burkhard Müssig</h3>
+                    <p class="title">Rechtsanwalt</p>
+                    <p>Spezialisiert auf komplexe rechtliche Fragestellungen mit fundierter juristischer Expertise.</p>
+                </article>
+
+                <article class="team-member">
+                    <h3>Stephan Himmelsbach</h3>
+                    <p class="title">Rechtsanwalt</p>
+                    <p>Schwerpunkte: Familienrecht, Erbrecht, Strafrecht, Arbeitsrecht und allgemeines Zivilrecht.</p>
+                </article>
+            </div>
         </section>
 
         <!-- Kontaktformular -->
         <section id="kontakt" class="container">
             <h2>Kontaktieren Sie uns</h2>
+            <p>Wir freuen uns auf Ihre Anfrage. Nutzen Sie unser Kontaktformular oder rufen Sie uns direkt an. Termine sind nach Vereinbarung auch außerhalb der regulären Öffnungszeiten möglich.</p>
+
             <form class="contact-form" onsubmit="handleSubmit(event)" novalidate>
                 <div class="form-group">
                     <label for="name">Name <span class="required" aria-label="Pflichtfeld">*</span></label>
-                    <input type="text" id="name" name="name" required aria-required="true">
+                    <input type="text" id="name" name="name" required aria-required="true" autocomplete="name">
                 </div>
 
                 <div class="form-group">
                     <label for="email">E-Mail <span class="required" aria-label="Pflichtfeld">*</span></label>
-                    <input type="email" id="email" name="email" required aria-required="true">
+                    <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
                 </div>
 
                 <div class="form-group">
                     <label for="phone">Telefon</label>
-                    <input type="tel" id="phone" name="phone">
+                    <input type="tel" id="phone" name="phone" autocomplete="tel">
+                </div>
+
+                <div class="form-group">
+                    <label for="standort">Bevorzugter Standort</label>
+                    <select id="standort" name="standort">
+                        <option value="">Bitte wählen...</option>
+                        <option value="bad-mergentheim">Bad Mergentheim</option>
+                        <option value="igersheim">Igersheim</option>
+                        <option value="egal">Keine Präferenz</option>
+                    </select>
                 </div>
 
                 <div class="form-group">
                     <label for="subject">Betreff <span class="required" aria-label="Pflichtfeld">*</span></label>
                     <select id="subject" name="subject" required aria-required="true">
                         <option value="">Bitte wählen...</option>
-                        <option value="baurecht">Bau- und Immobilienrecht</option>
-                        <option value="erbrecht">Erb- und Familienrecht</option>
-                        <option value="gesellschaftsrecht">Gesellschafts- und Steuerrecht</option>
+                        <option value="familienrecht">Familienrecht</option>
+                        <option value="erbrecht">Erbrecht</option>
+                        <option value="strafrecht">Strafrecht</option>
                         <option value="arbeitsrecht">Arbeitsrecht</option>
+                        <option value="mietrecht">Mietrecht</option>
+                        <option value="zivilrecht">Allgemeines Zivilrecht</option>
                         <option value="sonstiges">Sonstiges</option>
                     </select>
                 </div>
@@ -715,18 +984,24 @@
                 </div>
             </form>
 
-            <div style="margin-top: 3rem; padding: 2rem; background: var(--light-bg); border-radius: 8px;">
-                <h3>Kontaktdaten</h3>
-                <p><strong>Anwaltskanzlei Dr. Himmelsbach & Partner GbR</strong><br>
-                Goethestraße 6<br>
-                68161 Mannheim</p>
-                <p><strong>Telefon:</strong> +49 621 10 40 80<br>
-                <strong>Telefax:</strong> +49 621 10 43 27<br>
-                <strong>E-Mail:</strong> info@anwaelte-dr-himmelsbach.de<br>
-                <strong>Website:</strong> <a href="https://www.anwaelte-dr-himmelsbach.de" target="_blank" rel="noopener">www.anwaelte-dr-himmelsbach.de</a></p>
+            <div class="info-box">
+                <h3>Kontaktinformationen</h3>
+                <p><strong>Kanzlei Himmelsbach & Kollegen</strong></p>
+
+                <p><strong>Standort Bad Mergentheim:</strong><br>
+                Mühlwehrstraße 33, 97980 Bad Mergentheim</p>
+
+                <p><strong>Standort Igersheim:</strong><br>
+                Steigerwaldstraße 27, 97999 Igersheim</p>
+
+                <p><strong>Telefon:</strong> +49 7931 6178 / +49 7931 561124<br>
+                <strong>Telefax:</strong> +49 7931 51422<br>
+                <strong>E-Mail:</strong> rae.himmelsbach@t-online.de<br>
+                <strong>Website:</strong> <a href="https://www.kanzlei-himmelsbach.de" target="_blank" rel="noopener">www.kanzlei-himmelsbach.de</a></p>
+
                 <p><strong>Öffnungszeiten:</strong><br>
                 Montag - Freitag: 08:00 - 17:00 Uhr<br>
-                Termine nach Vereinbarung</p>
+                Termine auch außerhalb der Öffnungszeiten nach Vereinbarung möglich</p>
             </div>
         </section>
     </main>
@@ -735,17 +1010,20 @@
     <footer role="contentinfo">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Dr. Himmelsbach & Partner</h3>
-                <p>Ihre Rechtsanwaltskanzlei<br>in Mannheim seit 1969</p>
+                <h3>Kanzlei Himmelsbach & Kollegen</h3>
+                <p>Ihre Rechtsanwaltskanzlei<br>in Bad Mergentheim & Igersheim</p>
+                <p style="margin-top: 1rem;">Kompetente Rechtsberatung<br>seit vielen Jahren</p>
             </div>
 
             <div class="footer-section">
                 <h3>Fachgebiete</h3>
                 <ul>
-                    <li><a href="#fachgebiete">Bau- und Immobilienrecht</a></li>
-                    <li><a href="#fachgebiete">Erb- und Familienrecht</a></li>
-                    <li><a href="#fachgebiete">Gesellschafts- und Steuerrecht</a></li>
+                    <li><a href="#fachgebiete">Familienrecht</a></li>
+                    <li><a href="#fachgebiete">Erbrecht</a></li>
+                    <li><a href="#fachgebiete">Strafrecht</a></li>
                     <li><a href="#fachgebiete">Arbeitsrecht</a></li>
+                    <li><a href="#fachgebiete">Mietrecht</a></li>
+                    <li><a href="#fachgebiete">Zivilrecht</a></li>
                 </ul>
             </div>
 
@@ -760,16 +1038,20 @@
 
             <div class="footer-section">
                 <h3>Kontakt</h3>
-                <p>Goethestraße 6<br>
-                68161 Mannheim<br>
-                Tel: +49 621 10 40 80<br>
-                Fax: +49 621 10 43 27<br>
-                info@anwaelte-dr-himmelsbach.de</p>
+                <p><strong>Bad Mergentheim:</strong><br>
+                Mühlwehrstraße 33<br>
+                97980 Bad Mergentheim</p>
+                <p><strong>Igersheim:</strong><br>
+                Steigerwaldstraße 27<br>
+                97999 Igersheim</p>
+                <p>Tel: +49 7931 6178<br>
+                Fax: +49 7931 51422<br>
+                rae.himmelsbach@t-online.de</p>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 Anwaltskanzlei Dr. Himmelsbach & Partner GbR. Alle Rechte vorbehalten.</p>
+            <p>&copy; 2026 Kanzlei Himmelsbach & Kollegen. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
 
@@ -781,32 +1063,38 @@
                 <h2 id="impressum-title">Impressum</h2>
 
                 <h3>Angaben gemäß § 5 TMG</h3>
-                <p><strong>Anwaltskanzlei Dr. Himmelsbach & Partner GbR</strong><br>
-                Rechtsanwälte<br>
-                Goethestraße 6<br>
-                68161 Mannheim</p>
+                <p><strong>Kanzlei Himmelsbach & Kollegen</strong><br>
+                Rechtsanwälte</p>
+
+                <p><strong>Standort Bad Mergentheim:</strong><br>
+                Mühlwehrstraße 33<br>
+                97980 Bad Mergentheim</p>
+
+                <p><strong>Standort Igersheim:</strong><br>
+                Steigerwaldstraße 27<br>
+                97999 Igersheim</p>
 
                 <h3>Vertreten durch</h3>
-                <p>Die Gesellschafter der GbR</p>
+                <p>Rechtsanwalt Fritz Himmelsbach<br>
+                Rechtsanwalt Burkhard Müssig<br>
+                Rechtsanwalt Stephan Himmelsbach</p>
 
                 <h3>Kontakt</h3>
-                <p>Telefon: +49 (0) 621 10 40 80<br>
-                Telefax: +49 (0) 621 10 43 27<br>
-                E-Mail: info@anwaelte-dr-himmelsbach.de<br>
-                Internet: <a href="https://www.anwaelte-dr-himmelsbach.de" target="_blank" rel="noopener">www.anwaelte-dr-himmelsbach.de</a></p>
+                <p>Telefon: +49 (0) 7931 6178<br>
+                Telefon alternativ: +49 (0) 7931 561124<br>
+                Telefax: +49 (0) 7931 51422<br>
+                E-Mail: rae.himmelsbach@t-online.de<br>
+                Internet: <a href="https://www.kanzlei-himmelsbach.de" target="_blank" rel="noopener">www.kanzlei-himmelsbach.de</a></p>
 
                 <h3>Berufsbezeichnung</h3>
                 <p>Rechtsanwalt (verliehen in der Bundesrepublik Deutschland)</p>
 
                 <h3>Zuständige Rechtsanwaltskammer</h3>
-                <p>Rechtsanwaltskammer Karlsruhe<br>
-                Reinhold-Frank-Straße 72<br>
-                76133 Karlsruhe<br>
-                Tel: +49 (0) 721 926870<br>
-                Web: <a href="https://www.rak-karlsruhe.de" target="_blank" rel="noopener">www.rak-karlsruhe.de</a></p>
-
-                <h3>Fachanwaltschaften</h3>
-                <p>Die Kanzlei führt verschiedene Fachanwaltschaften, die durch die Rechtsanwaltskammer Karlsruhe verliehen wurden. Details zu den jeweiligen Fachanwaltstitel der einzelnen Partner entnehmen Sie bitte der Kanzlei-Website oder erfragen diese telefonisch.</p>
+                <p>Rechtsanwaltskammer Stuttgart<br>
+                Königstraße 14<br>
+                70173 Stuttgart<br>
+                Tel: +49 (0) 711 22681-0<br>
+                Web: <a href="https://www.rechtsanwaltskammer-stuttgart.de" target="_blank" rel="noopener">www.rechtsanwaltskammer-stuttgart.de</a></p>
 
                 <h3>Berufsrechtliche Regelungen</h3>
                 <p>Folgende berufsrechtliche Regelungen gelten:</p>
@@ -817,16 +1105,11 @@
                     <li>Rechtsanwaltsvergütungsgesetz (RVG)</li>
                     <li>Berufsregeln der Rechtsanwälte der Europäischen Gemeinschaft (CCBE)</li>
                 </ul>
-                <p>Die Regelungen können eingesehen werden unter: <a href="http://www.brak.de" target="_blank" rel="noopener">www.brak.de</a></p>
-
-                <h3>Umsatzsteuer-Identifikationsnummer</h3>
-                <p>Gemäß § 27a Umsatzsteuergesetz:<br>
-                USt-IdNr.: DE123456789</p>
+                <p>Die Regelungen können eingesehen werden unter: <a href="https://www.brak.de" target="_blank" rel="noopener">www.brak.de</a></p>
 
                 <h3>Berufshaftpflichtversicherung</h3>
-                <p>Versicherer: Musterhaftpflicht AG<br>
-                Musterweg 99<br>
-                12345 Musterstadt<br>
+                <p>Es besteht eine Berufshaftpflichtversicherung bei:<br>
+                (Name und Anschrift der Versicherungsgesellschaft auf Anfrage)<br>
                 Geltungsbereich: Deutschland</p>
 
                 <h3>Hinweis gemäß § 36 Verbraucherstreitbeilegungsgesetz (VSBG)</h3>
@@ -838,13 +1121,13 @@
 
                 <h3>Haftungsausschluss</h3>
                 <h4>Haftung für Inhalte</h4>
-                <p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Rechtsanwälte sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.</p>
+                <p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Rechtsanwälte sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen.</p>
 
                 <h4>Haftung für Links</h4>
-                <p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+                <p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.</p>
 
                 <h4>Urheberrecht</h4>
-                <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+                <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.</p>
             </div>
         </div>
     </div>
@@ -858,49 +1141,55 @@
 
                 <h3>1. Datenschutz auf einen Blick</h3>
                 <h4>Allgemeine Hinweise</h4>
-                <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
+                <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.</p>
 
                 <h4>Datenerfassung auf dieser Website</h4>
                 <p><strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong><br>
                 Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.</p>
 
                 <p><strong>Wie erfassen wir Ihre Daten?</strong><br>
-                Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. um Daten handeln, die Sie in ein Kontaktformular eingeben. Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z.B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs).</p>
+                Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. um Daten handeln, die Sie in ein Kontaktformular eingeben. Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z.B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.</p>
 
                 <p><strong>Wofür nutzen wir Ihre Daten?</strong><br>
-                Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.</p>
+                Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden. Sofern über die Website Verträge geschlossen oder angebahnt werden können, werden die übermittelten Daten auch für Vertragsangebote, Bestellungen oder sonstige Auftragsanfragen verarbeitet.</p>
 
                 <p><strong>Welche Rechte haben Sie bezüglich Ihrer Daten?</strong><br>
-                Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</p>
+                Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.</p>
 
-                <h3>2. Hosting und Content Delivery Networks (CDN)</h3>
-                <h4>Externes Hosting</h4>
-                <p>Diese Website wird bei einem externen Dienstleister gehostet (Hoster). Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert. Hierbei kann es sich v. a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Websitezugriffe und sonstige Daten, die über eine Website generiert werden, handeln.</p>
+                <h3>2. Hosting</h3>
+                <p>Wir hosten die Inhalte unserer Website bei einem externen Dienstleister. Personenbezogene Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert. Hierbei kann es sich v.a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Websitezugriffe und sonstige Daten, die über eine Website generiert werden, handeln.</p>
 
                 <h3>3. Allgemeine Hinweise und Pflichtinformationen</h3>
                 <h4>Datenschutz</h4>
                 <p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
 
-                <p>Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.</p>
+                <p>Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.</p>
+
+                <p>Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.</p>
 
                 <h4>Verantwortliche Stelle</h4>
                 <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:<br><br>
-                Anwaltskanzlei Dr. Himmelsbach & Partner GbR<br>
-                Goethestraße 6<br>
-                68161 Mannheim<br>
-                Telefon: +49 621 10 40 80<br>
-                E-Mail: info@anwaelte-dr-himmelsbach.de</p>
+                Kanzlei Himmelsbach & Kollegen<br>
+                Mühlwehrstraße 33<br>
+                97980 Bad Mergentheim<br>
+                Telefon: +49 7931 6178<br>
+                E-Mail: rae.himmelsbach@t-online.de</p>
 
                 <p>Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, E-Mail-Adressen o. Ä.) entscheidet.</p>
 
                 <h4>Speicherdauer</h4>
-                <p>Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben (z.B. steuer- oder handelsrechtliche Aufbewahrungsfristen).</p>
+                <p>Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben (z.B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall erfolgt die Löschung nach Fortfall dieser Gründe.</p>
 
                 <h4>Widerruf Ihrer Einwilligung zur Datenverarbeitung</h4>
                 <p>Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.</p>
 
+                <h4>Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen Direktwerbung (Art. 21 DSGVO)</h4>
+                <p>Wenn die Datenverarbeitung auf Grundlage von Art. 6 Abs. 1 lit. e oder f DSGVO erfolgt, haben Sie jederzeit das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, gegen die Verarbeitung Ihrer personenbezogenen Daten Widerspruch einzulegen; dies gilt auch für ein auf diese Bestimmungen gestütztes Profiling. Die jeweilige Rechtsgrundlage, auf denen eine Verarbeitung beruht, entnehmen Sie dieser Datenschutzerklärung. Wenn Sie Widerspruch einlegen, werden wir Ihre betroffenen personenbezogenen Daten nicht mehr verarbeiten, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Rechte und Freiheiten überwiegen oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen (Widerspruch nach Art. 21 Abs. 1 DSGVO).</p>
+
                 <h4>SSL- bzw. TLS-Verschlüsselung</h4>
                 <p>Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://" auf „https://" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.</p>
+
+                <p>Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.</p>
 
                 <h3>4. Datenerfassung auf dieser Website</h3>
                 <h4>Kontaktformular</h4>
@@ -910,32 +1199,28 @@
 
                 <p>Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z.B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – bleiben unberührt.</p>
 
-                <h4>Server-Log-Dateien</h4>
-                <p>Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:</p>
-                <ul>
-                    <li>Browsertyp und Browserversion</li>
-                    <li>Verwendetes Betriebssystem</li>
-                    <li>Referrer URL</li>
-                    <li>Hostname des zugreifenden Rechners</li>
-                    <li>Uhrzeit der Serveranfrage</li>
-                    <li>IP-Adresse</li>
-                </ul>
+                <h4>Anfrage per E-Mail, Telefon oder Telefax</h4>
+                <p>Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
 
-                <p>Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und der Optimierung seiner Website – hierzu müssen die Server-Log-Files erfasst werden.</p>
+                <p>Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde.</p>
+
+                <p>Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z.B. nach abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt.</p>
 
                 <h3>5. Ihre Rechte</h3>
                 <p>Sie haben folgende Rechte:</p>
                 <ul>
-                    <li>Recht auf Auskunft (Art. 15 DSGVO)</li>
-                    <li>Recht auf Berichtigung (Art. 16 DSGVO)</li>
-                    <li>Recht auf Löschung (Art. 17 DSGVO)</li>
-                    <li>Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
-                    <li>Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</li>
-                    <li>Widerspruchsrecht (Art. 21 DSGVO)</li>
-                    <li>Recht auf Beschwerde bei einer Aufsichtsbehörde (Art. 77 DSGVO)</li>
+                    <li>Recht auf Auskunft nach Art. 15 DSGVO</li>
+                    <li>Recht auf Berichtigung nach Art. 16 DSGVO</li>
+                    <li>Recht auf Löschung nach Art. 17 DSGVO</li>
+                    <li>Recht auf Einschränkung der Verarbeitung nach Art. 18 DSGVO</li>
+                    <li>Recht auf Datenübertragbarkeit nach Art. 20 DSGVO</li>
+                    <li>Widerspruchsrecht nach Art. 21 DSGVO</li>
+                    <li>Recht auf Beschwerde bei einer Aufsichtsbehörde nach Art. 77 DSGVO</li>
                 </ul>
 
-                <p>Stand: Januar 2026</p>
+                <p>Bei Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten, bei Auskünften, Berichtigung, Einschränkung oder Löschung von Daten sowie Widerruf erteilter Einwilligungen oder Widerspruch gegen eine bestimmte Datenverwendung wenden Sie sich bitte direkt an uns über die im Impressum angegebenen Kontaktdaten.</p>
+
+                <p><strong>Stand: Januar 2026</strong></p>
             </div>
         </div>
     </div>
@@ -945,7 +1230,7 @@
         <div class="cookie-content">
             <div class="cookie-text">
                 <strong id="cookie-title">Cookie-Hinweis</strong>
-                <p id="cookie-description">Diese Website verwendet nur technisch notwendige Cookies, um die Funktionalität der Website zu gewährleisten. Es werden keine Tracking- oder Marketing-Cookies eingesetzt. Weitere Informationen finden Sie in unserer <a href="#datenschutz-link" onclick="openModal('datenschutz-modal'); return false;" style="color: white; text-decoration: underline;">Datenschutzerklärung</a>.</p>
+                <p id="cookie-description">Diese Website verwendet nur technisch notwendige Cookies, um die Funktionalität der Website zu gewährleisten. Es werden keine Tracking- oder Marketing-Cookies eingesetzt. Weitere Informationen finden Sie in unserer <a href="#datenschutz-link" onclick="openModal('datenschutz-modal'); return false;">Datenschutzerklärung</a>.</p>
             </div>
             <div class="cookie-actions">
                 <button class="cookie-btn cookie-accept" onclick="acceptCookies()">Verstanden</button>
@@ -962,7 +1247,9 @@
                 document.body.style.overflow = 'hidden';
                 // Focus auf Close-Button setzen für Accessibility
                 const closeBtn = modal.querySelector('.modal-close');
-                if (closeBtn) closeBtn.focus();
+                if (closeBtn) {
+                    setTimeout(() => closeBtn.focus(), 100);
+                }
             }
         }
 
@@ -1024,7 +1311,7 @@
         function handleSubmit(event) {
             event.preventDefault();
 
-            // Honeypot Check
+            // Honeypot Check (Anti-Spam)
             const honeypot = document.querySelector('input[name="website"]');
             if (honeypot && honeypot.value !== '') {
                 console.log('Spam detected');
@@ -1065,17 +1352,22 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 const href = this.getAttribute('href');
-                // Nicht bei Modal-Links
+                // Nicht bei Modal-Links und leeren Ankern
                 if (href === '#impressum-link' || href === '#datenschutz-link' || href === '#') {
                     return;
                 }
 
                 e.preventDefault();
-                const target = document.querySelector(href);
+                const targetId = href.substring(1);
+                const target = document.getElementById(targetId);
+
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
+                    const headerHeight = document.querySelector('header').offsetHeight;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
+
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
                     });
                 }
             });
