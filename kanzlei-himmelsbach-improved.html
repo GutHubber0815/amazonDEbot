@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kanzlei Himmelsbach in Mannheim - Fachanwälte für Arbeitsrecht, Familienrecht, Mietrecht und Steuerrecht. Kompetente Rechtsberatung seit über 20 Jahren.">
+    <meta name="keywords" content="Rechtsanwalt Mannheim, Fachanwalt Arbeitsrecht, Fachanwalt Familienrecht, Anwalt Mietrecht, Steuerrecht Mannheim">
+    <meta name="author" content="Kanzlei Himmelsbach">
+    <meta name="robots" content="index, follow">
+    <title>Kanzlei Himmelsbach Mannheim | Fachanwälte für Arbeits-, Familien-, Miet- und Steuerrecht</title>
+
+    <!-- Strukturierte Daten für LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "Kanzlei Himmelsbach",
+        "image": "",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Musterstraße 123",
+            "addressLocality": "Mannheim",
+            "postalCode": "68161",
+            "addressCountry": "DE"
+        },
+        "telephone": "+49-621-12345678",
+        "email": "kontakt@kanzlei-himmelsbach.de",
+        "priceRange": "$$",
+        "openingHours": "Mo-Fr 09:00-18:00"
+    }
+    </script>
+
+    <style>
+        /* CSS Reset & Base Styles */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #0066cc;
+            --accent-color: #b8860b;
+            --text-color: #333333;
+            --bg-color: #ffffff;
+            --light-bg: #f8f9fa;
+            --border-color: #e0e0e0;
+            --focus-color: #0056b3;
+            --success-color: #28a745;
+            --error-color: #dc3545;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            font-size: 16px;
+        }
+
+        /* Skip Link für Barrierefreiheit */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary-color);
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+            outline: 3px solid var(--accent-color);
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+
+        nav a:hover, nav a:focus {
+            color: var(--accent-color);
+            outline: 2px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.875rem 2rem;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn:hover, .btn:focus {
+            background-color: #9a7209;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            outline: 2px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1rem;
+        }
+
+        /* Fachgebiete Grid */
+        .fachgebiete-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .fachgebiet-card {
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .fachgebiet-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            border-color: var(--secondary-color);
+        }
+
+        .fachgebiet-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .fachgebiet-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .fachgebiet-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .fachgebiet-card li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success-color);
+            font-weight: bold;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 3rem;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+
+        /* Kontaktformular */
+        .contact-form {
+            max-width: 600px;
+            margin: 2rem auto;
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        label .required {
+            color: var(--error-color);
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+        }
+
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .honeypot {
+            position: absolute;
+            left: -9999px;
+            width: 1px;
+            height: 1px;
+        }
+
+        .form-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        button[type="submit"] {
+            flex: 1;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 1rem 1rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover, .footer-section a:focus {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            font-size: 0.9rem;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.7);
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: auto;
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 800px;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        .modal-close {
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--text-color);
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0.5rem;
+            line-height: 1;
+        }
+
+        .modal-close:hover, .modal-close:focus {
+            color: var(--error-color);
+            outline: 2px solid var(--focus-color);
+        }
+
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1.5rem;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+            z-index: 999;
+            display: none;
+        }
+
+        .cookie-banner.active {
+            display: block;
+        }
+
+        .cookie-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .cookie-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .cookie-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .cookie-btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .cookie-accept {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        .cookie-accept:hover, .cookie-accept:focus {
+            background-color: #9a7209;
+            outline: 2px solid white;
+            outline-offset: 2px;
+        }
+
+        .cookie-decline {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .cookie-decline:hover, .cookie-decline:focus {
+            background-color: rgba(255,255,255,0.1);
+            outline: 2px solid white;
+            outline-offset: 2px;
+        }
+
+        /* Impressum Styling */
+        .impressum-content h3 {
+            color: var(--primary-color);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .impressum-content p {
+            margin-bottom: 0.75rem;
+            line-height: 1.8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+                width: 100%;
+            }
+
+            nav a {
+                display: block;
+                text-align: center;
+            }
+
+            .fachgebiete-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cookie-content {
+                flex-direction: column;
+            }
+
+            .cookie-actions {
+                width: 100%;
+            }
+
+            .cookie-btn {
+                flex: 1;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            header, .cookie-banner, .modal {
+                display: none;
+            }
+
+            body {
+                color: black;
+            }
+
+            a {
+                text-decoration: underline;
+            }
+        }
+
+        /* High Contrast Mode Support */
+        @media (prefers-contrast: high) {
+            :root {
+                --primary-color: #000066;
+                --text-color: #000000;
+                --border-color: #000000;
+            }
+
+            .btn, .cookie-accept {
+                border: 2px solid white;
+            }
+        }
+
+        /* Reduced Motion Support */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip Link für Screenreader -->
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+
+    <!-- Header -->
+    <header role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <h1>Kanzlei Himmelsbach</h1>
+            </div>
+            <nav role="navigation" aria-label="Hauptnavigation">
+                <ul>
+                    <li><a href="#fachgebiete">Fachgebiete</a></li>
+                    <li><a href="#team">Über uns</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                    <li><a href="#impressum-link" onclick="openModal('impressum-modal'); return false;">Impressum</a></li>
+                    <li><a href="#datenschutz-link" onclick="openModal('datenschutz-modal'); return false;">Datenschutz</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" role="banner">
+        <div class="hero-content">
+            <h2>Ihre kompetente Rechtsberatung in Mannheim</h2>
+            <p>Seit über 20 Jahren beraten wir Sie in allen rechtlichen Angelegenheiten mit Expertise und Engagement.</p>
+            <a href="#kontakt" class="btn" role="button">Jetzt Termin vereinbaren</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Fachgebiete -->
+        <section id="fachgebiete" class="container">
+            <h2>Unsere Fachgebiete</h2>
+            <div class="fachgebiete-grid">
+                <article class="fachgebiet-card">
+                    <h3>Arbeitsrecht</h3>
+                    <p>Fachanwalt für Arbeitsrecht - Wir vertreten Sie in allen arbeitsrechtlichen Angelegenheiten.</p>
+                    <ul>
+                        <li>Kündigungsschutz</li>
+                        <li>Abfindungsverhandlungen</li>
+                        <li>Abmahnungen & Betriebsrat</li>
+                        <li>Arbeitsverträge & Aufhebungsverträge</li>
+                        <li>Überstunden & Urlaubsansprüche</li>
+                    </ul>
+                </article>
+
+                <article class="fachgebiet-card">
+                    <h3>Familienrecht</h3>
+                    <p>Fachanwalt für Familienrecht - Einfühlsame Beratung in sensiblen Familienangelegenheiten.</p>
+                    <ul>
+                        <li>Scheidung & Trennung</li>
+                        <li>Sorgerecht & Umgangsrecht</li>
+                        <li>Unterhalt (Kindes-, Ehegatten-)</li>
+                        <li>Zugewinnausgleich</li>
+                        <li>Ehevertrag & Scheidungsfolgenvereinbarung</li>
+                    </ul>
+                </article>
+
+                <article class="fachgebiet-card">
+                    <h3>Mietrecht</h3>
+                    <p>Umfassende Beratung für Mieter und Vermieter in allen mietrechtlichen Fragen.</p>
+                    <ul>
+                        <li>Nebenkostenabrechnungen</li>
+                        <li>Mietminderung & Mängel</li>
+                        <li>Kündigung & Räumung</li>
+                        <li>Mietvertragsgestaltung</li>
+                        <li>Betriebskostennachforderungen</li>
+                    </ul>
+                </article>
+
+                <article class="fachgebiet-card">
+                    <h3>Steuerrecht</h3>
+                    <p>Kompetente Vertretung in steuerrechtlichen Auseinandersetzungen.</p>
+                    <ul>
+                        <li>Steuerstrafrecht</li>
+                        <li>Einspruchsverfahren</li>
+                        <li>Betriebsprüfungen</li>
+                        <li>Steuernachzahlungen</li>
+                        <li>Selbstanzeigen</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Über uns -->
+        <section id="team" class="container">
+            <h2>Über uns</h2>
+            <p>Die Kanzlei Himmelsbach wurde vor über 20 Jahren in Mannheim gegründet und hat sich seitdem als verlässlicher Partner in rechtlichen Angelegenheiten etabliert. Unser Team aus erfahrenen Fachanwälten berät und vertritt Mandanten in den Bereichen Arbeitsrecht, Familienrecht, Mietrecht und Steuerrecht.</p>
+            <p>Wir legen großen Wert auf eine persönliche, mandantenorientierte Beratung und entwickeln individuelle Lösungsstrategien für Ihre rechtlichen Herausforderungen. Vertrauen, Transparenz und Erfolg stehen im Mittelpunkt unserer Arbeit.</p>
+        </section>
+
+        <!-- Kontaktformular -->
+        <section id="kontakt" class="container">
+            <h2>Kontaktieren Sie uns</h2>
+            <form class="contact-form" onsubmit="handleSubmit(event)" novalidate>
+                <div class="form-group">
+                    <label for="name">Name <span class="required" aria-label="Pflichtfeld">*</span></label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-Mail <span class="required" aria-label="Pflichtfeld">*</span></label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefon</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Betreff <span class="required" aria-label="Pflichtfeld">*</span></label>
+                    <select id="subject" name="subject" required aria-required="true">
+                        <option value="">Bitte wählen...</option>
+                        <option value="arbeitsrecht">Arbeitsrecht</option>
+                        <option value="familienrecht">Familienrecht</option>
+                        <option value="mietrecht">Mietrecht</option>
+                        <option value="steuerrecht">Steuerrecht</option>
+                        <option value="sonstiges">Sonstiges</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Ihre Nachricht <span class="required" aria-label="Pflichtfeld">*</span></label>
+                    <textarea id="message" name="message" required aria-required="true"></textarea>
+                </div>
+
+                <!-- Honeypot gegen Spam-Bots -->
+                <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="privacy" required aria-required="true">
+                        Ich habe die <a href="#datenschutz-link" onclick="openModal('datenschutz-modal'); return false;">Datenschutzerklärung</a> gelesen und akzeptiere diese. <span class="required">*</span>
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn">Nachricht senden</button>
+                </div>
+            </form>
+
+            <div style="margin-top: 3rem; padding: 2rem; background: var(--light-bg); border-radius: 8px;">
+                <h3>Kontaktdaten</h3>
+                <p><strong>Kanzlei Himmelsbach</strong><br>
+                Musterstraße 123<br>
+                68161 Mannheim</p>
+                <p><strong>Telefon:</strong> +49 621 12345678<br>
+                <strong>E-Mail:</strong> kontakt@kanzlei-himmelsbach.de</p>
+                <p><strong>Öffnungszeiten:</strong><br>
+                Montag - Freitag: 09:00 - 18:00 Uhr<br>
+                Termine nach Vereinbarung</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Kanzlei Himmelsbach</h3>
+                <p>Ihre Rechtsanwaltskanzlei<br>in Mannheim</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Fachgebiete</h3>
+                <ul>
+                    <li><a href="#fachgebiete">Arbeitsrecht</a></li>
+                    <li><a href="#fachgebiete">Familienrecht</a></li>
+                    <li><a href="#fachgebiete">Mietrecht</a></li>
+                    <li><a href="#fachgebiete">Steuerrecht</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Rechtliches</h3>
+                <ul>
+                    <li><a href="#impressum-link" onclick="openModal('impressum-modal'); return false;">Impressum</a></li>
+                    <li><a href="#datenschutz-link" onclick="openModal('datenschutz-modal'); return false;">Datenschutz</a></li>
+                    <li><a href="#" onclick="reopenCookieBanner(); return false;">Cookie-Einstellungen</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>Musterstraße 123<br>
+                68161 Mannheim<br>
+                Tel: +49 621 12345678<br>
+                kontakt@kanzlei-himmelsbach.de</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Kanzlei Himmelsbach. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <!-- Impressum Modal -->
+    <div id="impressum-modal" class="modal" role="dialog" aria-labelledby="impressum-title" aria-modal="true">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('impressum-modal')" aria-label="Modal schließen">&times;</button>
+            <div class="impressum-content">
+                <h2 id="impressum-title">Impressum</h2>
+
+                <h3>Angaben gemäß § 5 TMG</h3>
+                <p><strong>Kanzlei Himmelsbach</strong><br>
+                Rechtsanwälte<br>
+                Musterstraße 123<br>
+                68161 Mannheim</p>
+
+                <h3>Kontakt</h3>
+                <p>Telefon: +49 (0) 621 12345678<br>
+                Telefax: +49 (0) 621 12345679<br>
+                E-Mail: kontakt@kanzlei-himmelsbach.de</p>
+
+                <h3>Berufsbezeichnung</h3>
+                <p>Rechtsanwalt (verliehen in der Bundesrepublik Deutschland)</p>
+
+                <h3>Zuständige Rechtsanwaltskammer</h3>
+                <p>Rechtsanwaltskammer Karlsruhe<br>
+                Reinhold-Frank-Straße 72<br>
+                76133 Karlsruhe<br>
+                Tel: +49 (0) 721 926870<br>
+                Web: <a href="https://www.rak-karlsruhe.de" target="_blank" rel="noopener">www.rak-karlsruhe.de</a></p>
+
+                <h3>Fachanwaltschaften</h3>
+                <p>Fachanwalt für Arbeitsrecht (verliehen durch Rechtsanwaltskammer Karlsruhe)<br>
+                Fachanwalt für Familienrecht (verliehen durch Rechtsanwaltskammer Karlsruhe)</p>
+
+                <h3>Berufsrechtliche Regelungen</h3>
+                <p>Folgende berufsrechtliche Regelungen gelten:</p>
+                <ul>
+                    <li>Bundesrechtsanwaltsordnung (BRAO)</li>
+                    <li>Berufsordnung für Rechtsanwälte (BORA)</li>
+                    <li>Fachanwaltsordnung (FAO)</li>
+                    <li>Rechtsanwaltsvergütungsgesetz (RVG)</li>
+                    <li>Berufsregeln der Rechtsanwälte der Europäischen Gemeinschaft (CCBE)</li>
+                </ul>
+                <p>Die Regelungen können eingesehen werden unter: <a href="http://www.brak.de" target="_blank" rel="noopener">www.brak.de</a></p>
+
+                <h3>Umsatzsteuer-Identifikationsnummer</h3>
+                <p>Gemäß § 27a Umsatzsteuergesetz:<br>
+                USt-IdNr.: DE123456789</p>
+
+                <h3>Berufshaftpflichtversicherung</h3>
+                <p>Versicherer: Musterhaftpflicht AG<br>
+                Musterweg 99<br>
+                12345 Musterstadt<br>
+                Geltungsbereich: Deutschland</p>
+
+                <h3>Hinweis gemäß § 36 Verbraucherstreitbeilegungsgesetz (VSBG)</h3>
+                <p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.<br><br>
+                Zuständige Schlichtungsstelle für Anwälte ist die Schlichtungsstelle der Rechtsanwaltschaft:<br>
+                Neue Grünstraße 17<br>
+                10179 Berlin<br>
+                Web: <a href="https://www.s-d-r.org" target="_blank" rel="noopener">www.s-d-r.org</a></p>
+
+                <h3>Haftungsausschluss</h3>
+                <h4>Haftung für Inhalte</h4>
+                <p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Rechtsanwälte sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.</p>
+
+                <h4>Haftung für Links</h4>
+                <p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+
+                <h4>Urheberrecht</h4>
+                <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Datenschutz Modal -->
+    <div id="datenschutz-modal" class="modal" role="dialog" aria-labelledby="datenschutz-title" aria-modal="true">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('datenschutz-modal')" aria-label="Modal schließen">&times;</button>
+            <div class="impressum-content">
+                <h2 id="datenschutz-title">Datenschutzerklärung</h2>
+
+                <h3>1. Datenschutz auf einen Blick</h3>
+                <h4>Allgemeine Hinweise</h4>
+                <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
+
+                <h4>Datenerfassung auf dieser Website</h4>
+                <p><strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong><br>
+                Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.</p>
+
+                <p><strong>Wie erfassen wir Ihre Daten?</strong><br>
+                Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. um Daten handeln, die Sie in ein Kontaktformular eingeben. Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z.B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs).</p>
+
+                <p><strong>Wofür nutzen wir Ihre Daten?</strong><br>
+                Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.</p>
+
+                <p><strong>Welche Rechte haben Sie bezüglich Ihrer Daten?</strong><br>
+                Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</p>
+
+                <h3>2. Hosting und Content Delivery Networks (CDN)</h3>
+                <h4>Externes Hosting</h4>
+                <p>Diese Website wird bei einem externen Dienstleister gehostet (Hoster). Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert. Hierbei kann es sich v. a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Websitezugriffe und sonstige Daten, die über eine Website generiert werden, handeln.</p>
+
+                <h3>3. Allgemeine Hinweise und Pflichtinformationen</h3>
+                <h4>Datenschutz</h4>
+                <p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
+
+                <p>Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.</p>
+
+                <h4>Verantwortliche Stelle</h4>
+                <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:<br><br>
+                Kanzlei Himmelsbach<br>
+                Musterstraße 123<br>
+                68161 Mannheim<br>
+                Telefon: +49 621 12345678<br>
+                E-Mail: kontakt@kanzlei-himmelsbach.de</p>
+
+                <p>Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, E-Mail-Adressen o. Ä.) entscheidet.</p>
+
+                <h4>Speicherdauer</h4>
+                <p>Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben (z.B. steuer- oder handelsrechtliche Aufbewahrungsfristen).</p>
+
+                <h4>Widerruf Ihrer Einwilligung zur Datenverarbeitung</h4>
+                <p>Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.</p>
+
+                <h4>SSL- bzw. TLS-Verschlüsselung</h4>
+                <p>Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://" auf „https://" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.</p>
+
+                <h3>4. Datenerfassung auf dieser Website</h3>
+                <h4>Kontaktformular</h4>
+                <p>Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+
+                <p>Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde.</p>
+
+                <p>Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z.B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – bleiben unberührt.</p>
+
+                <h4>Server-Log-Dateien</h4>
+                <p>Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:</p>
+                <ul>
+                    <li>Browsertyp und Browserversion</li>
+                    <li>Verwendetes Betriebssystem</li>
+                    <li>Referrer URL</li>
+                    <li>Hostname des zugreifenden Rechners</li>
+                    <li>Uhrzeit der Serveranfrage</li>
+                    <li>IP-Adresse</li>
+                </ul>
+
+                <p>Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und der Optimierung seiner Website – hierzu müssen die Server-Log-Files erfasst werden.</p>
+
+                <h3>5. Ihre Rechte</h3>
+                <p>Sie haben folgende Rechte:</p>
+                <ul>
+                    <li>Recht auf Auskunft (Art. 15 DSGVO)</li>
+                    <li>Recht auf Berichtigung (Art. 16 DSGVO)</li>
+                    <li>Recht auf Löschung (Art. 17 DSGVO)</li>
+                    <li>Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+                    <li>Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</li>
+                    <li>Widerspruchsrecht (Art. 21 DSGVO)</li>
+                    <li>Recht auf Beschwerde bei einer Aufsichtsbehörde (Art. 77 DSGVO)</li>
+                </ul>
+
+                <p>Stand: Januar 2026</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner active" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-description">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <strong id="cookie-title">Cookie-Hinweis</strong>
+                <p id="cookie-description">Diese Website verwendet nur technisch notwendige Cookies, um die Funktionalität der Website zu gewährleisten. Es werden keine Tracking- oder Marketing-Cookies eingesetzt. Weitere Informationen finden Sie in unserer <a href="#datenschutz-link" onclick="openModal('datenschutz-modal'); return false;" style="color: white; text-decoration: underline;">Datenschutzerklärung</a>.</p>
+            </div>
+            <div class="cookie-actions">
+                <button class="cookie-btn cookie-accept" onclick="acceptCookies()">Verstanden</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Modal Funktionen
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                // Focus auf Close-Button setzen für Accessibility
+                const closeBtn = modal.querySelector('.modal-close');
+                if (closeBtn) closeBtn.focus();
+            }
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Modal schließen bei Klick außerhalb
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        };
+
+        // ESC-Taste zum Schließen von Modals
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const modals = document.querySelectorAll('.modal.active');
+                modals.forEach(modal => {
+                    modal.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            }
+        });
+
+        // Cookie Banner Funktionen
+        function acceptCookies() {
+            localStorage.setItem('cookiesAccepted', 'true');
+            const banner = document.getElementById('cookie-banner');
+            if (banner) {
+                banner.classList.remove('active');
+            }
+        }
+
+        function reopenCookieBanner() {
+            localStorage.removeItem('cookiesAccepted');
+            const banner = document.getElementById('cookie-banner');
+            if (banner) {
+                banner.classList.add('active');
+            }
+        }
+
+        // Cookie Banner beim Laden prüfen
+        window.addEventListener('DOMContentLoaded', function() {
+            const cookiesAccepted = localStorage.getItem('cookiesAccepted');
+            const banner = document.getElementById('cookie-banner');
+
+            if (cookiesAccepted === 'true' && banner) {
+                banner.classList.remove('active');
+            }
+        });
+
+        // Formular Handling
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            // Honeypot Check
+            const honeypot = document.querySelector('input[name="website"]');
+            if (honeypot && honeypot.value !== '') {
+                console.log('Spam detected');
+                return false;
+            }
+
+            // Formular-Validierung
+            const form = event.target;
+            const formData = new FormData(form);
+
+            // Einfache Client-seitige Validierung
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+            const privacy = formData.get('privacy');
+
+            if (!name || !email || !subject || !message || !privacy) {
+                alert('Bitte füllen Sie alle Pflichtfelder aus.');
+                return false;
+            }
+
+            // Email-Validierung
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Bitte geben Sie eine gültige E-Mail-Adresse ein.');
+                return false;
+            }
+
+            // Demo: Erfolg anzeigen
+            alert('Vielen Dank für Ihre Nachricht! Wir werden uns schnellstmöglich bei Ihnen melden.\n\n(Dies ist eine Demo-Implementierung. In einer Produktivumgebung würde das Formular an einen Server gesendet.)');
+            form.reset();
+
+            return false;
+        }
+
+        // Smooth Scroll für Anchor-Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                // Nicht bei Modal-Links
+                if (href === '#impressum-link' || href === '#datenschutz-link' || href === '#') {
+                    return;
+                }
+
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
