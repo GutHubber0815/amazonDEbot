@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilder-Extraktor Bookmarklet</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 { color: #1a4d7a; }
+        .bookmarklet {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 2px dashed #1a4d7a;
+        }
+        .bookmarklet-link {
+            display: inline-block;
+            background: #1a4d7a;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .bookmarklet-link:hover {
+            background: #2874a6;
+        }
+        .step {
+            background: #e8f4f8;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 4px solid #c89f5d;
+            border-radius: 4px;
+        }
+        code {
+            background: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            font-family: monospace;
+            font-size: 12px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🖼️ Bilder-Extraktor für kanzlei-himmelsbach.de</h1>
+
+    <p>Mit diesem Tool können Sie ALLE Bilder von der Website extrahieren und als Base64 in Ihre HTML-Datei einbauen.</p>
+
+    <div class="warning">
+        <strong>⚠️ Wichtig:</strong> Dieses Bookmarklet funktioniert NUR, wenn Sie es direkt auf der Website <code>www.kanzlei-himmelsbach.de</code> ausführen!
+    </div>
+
+    <h2>📋 Anleitung</h2>
+
+    <div class="step">
+        <h3>Schritt 1: Bookmarklet installieren</h3>
+        <p><strong>Ziehen Sie diesen Link in Ihre Lesezeichen-Leiste:</strong></p>
+        <a href="javascript:(function()%7Bconst%20images%3Ddocument.querySelectorAll('img')%2Cresults%3D%5B%5D%3Basync%20function%20imageToBase64(e)%7Breturn%20new%20Promise((t%2Ca)%3D%3E%7Bconst%20n%3Dnew%20Image%3Bn.crossOrigin%3D'Anonymous'%2Cn.onload%3D()%3D%3E%7Bconst%20e%3Ddocument.createElement('canvas')%2Ca%3De.getContext('2d')%3Be.width%3Dn.width%2Ce.height%3Dn.height%2Ca.drawImage(n%2C0%2C0)%3Bconst%20s%3De.toDataURL('image%2Fjpeg')%3Bt(s)%7D%2Cn.onerror%3Dt%2Cn.src%3De%7D)%7Dfor(const%20e%20of%20images)if(e.src)try%7Bconst%20t%3Dawait%20imageToBase64(e.src)%3Bresults.push(%7Bsrc%3Ae.src%2Calt%3Ae.alt%7C%7C''%2Cbase64%3At%2Csize%3AMath.round(t.length*3%2F4%2F1024)%7D)%7Dcatch(e)%7Bconsole.error('Fehler%3A'%2Ce)%7Dconst%20output%3DJSON.stringify(results%2Cnull%2C2)%2CmodalHTML%3D%60%0A%20%20%20%20%3Cdiv%20style%3D%22position%3Afixed%3Btop%3A0%3Bleft%3A0%3Bwidth%3A100%25%3Bheight%3A100%25%3Bbackground%3Argba(0%2C0%2C0%2C0.8)%3Bz-index%3A999999%3Bdisplay%3Aflex%3Balign-items%3Acenter%3Bjustify-content%3Acenter%22%3E%0A%20%20%20%20%20%20%3Cdiv%20style%3D%22background%3Awhite%3Bpadding%3A30px%3Bmax-width%3A800px%3Bmax-height%3A80vh%3Boverflow%3Aauto%3Bborder-radius%3A10px%22%3E%0A%20%20%20%20%20%20%20%20%3Ch2%3E%F0%9F%96%BC%EF%B8%8F%20Gefundene%20Bilder%20(%24%7Bresults.length%7D)%3C%2Fh2%3E%0A%20%20%20%20%20%20%20%20%3Ctextarea%20readonly%20style%3D%22width%3A100%25%3Bheight%3A400px%3Bfont-family%3Amonospace%3Bfont-size%3A12px%22%3E%24%7Boutput%7D%3C%2Ftextarea%3E%0A%20%20%20%20%20%20%20%20%3Cbutton%20onclick%3D%22navigator.clipboard.writeText('%24%7Boutput.replace(%2F'%2Fg%2C'%5C%5C'')%7D')%3Balert('Kopiert!')%22%20style%3D%22background%3A%231a4d7a%3Bcolor%3Awhite%3Bpadding%3A10px%2020px%3Bborder%3Anone%3Bborder-radius%3A5px%3Bcursor%3Apointer%3Bmargin%3A10px%205px%200%200%22%3EKopieren%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%3Cbutton%20onclick%3D%22this.parentElement.parentElement.remove()%22%20style%3D%22background%3A%23666%3Bcolor%3Awhite%3Bpadding%3A10px%2020px%3Bborder%3Anone%3Bborder-radius%3A5px%3Bcursor%3Apointer%3Bmargin%3A10px%200%200%200%22%3ESchlie%C3%9Fen%3C%2Fbutton%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%60%3Bdocument.body.insertAdjacentHTML('beforeend'%2CmodalHTML)%7D)()%3B" class="bookmarklet-link" draggable="true">
+            🖼️ Bilder Extrahieren
+        </a>
+
+        <p><em>Oder rechtsklick auf den Link → "Lesezeichen für diesen Link hinzufügen"</em></p>
+    </div>
+
+    <div class="step">
+        <h3>Schritt 2: Website öffnen</h3>
+        <p>Öffnen Sie in einem neuen Tab: <a href="https://www.kanzlei-himmelsbach.de/" target="_blank">www.kanzlei-himmelsbach.de</a></p>
+    </div>
+
+    <div class="step">
+        <h3>Schritt 3: Bookmarklet ausführen</h3>
+        <p>Klicken Sie auf das Bookmarklet in Ihrer Lesezeichen-Leiste.</p>
+        <p>➡️ Es erscheint ein Popup mit allen Bildern als Base64!</p>
+    </div>
+
+    <div class="step">
+        <h3>Schritt 4: Daten kopieren</h3>
+        <p>Klicken Sie auf "Kopieren" und speichern Sie die Daten in einer Datei: <code>bilder-daten.json</code></p>
+    </div>
+
+    <h2>🛠️ Alternative: Manueller JavaScript-Code</h2>
+
+    <p>Falls das Bookmarklet nicht funktioniert, können Sie den Code direkt in der Browser-Konsole ausführen:</p>
+
+    <div class="step">
+        <ol>
+            <li>Öffnen Sie <a href="https://www.kanzlei-himmelsbach.de/" target="_blank">www.kanzlei-himmelsbach.de</a></li>
+            <li>Drücken Sie <code>F12</code> (Developer Tools)</li>
+            <li>Gehen Sie zum Tab "Console"</li>
+            <li>Kopieren Sie den unten stehenden Code und fügen Sie ihn ein</li>
+            <li>Drücken Sie <code>Enter</code></li>
+        </ol>
+    </div>
+
+    <h3>JavaScript-Code:</h3>
+    <textarea id="jsCode" readonly>
+// Alle Bilder von der aktuellen Seite extrahieren und als Base64 konvertieren
+(async function() {
+    const images = document.querySelectorAll('img');
+    const results = [];
+
+    // Funktion um Bild zu Base64 zu konvertieren
+    async function imageToBase64(url) {
+        return new Promise((resolve, reject) => {
+            const img = new Image();
+            img.crossOrigin = 'Anonymous';
+            img.onload = () => {
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                canvas.width = img.width;
+                canvas.height = img.height;
+                ctx.drawImage(img, 0, 0);
+                const base64 = canvas.toDataURL('image/jpeg');
+                resolve(base64);
+            };
+            img.onerror = reject;
+            img.src = url;
+        });
+    }
+
+    console.log('🔍 Gefundene Bilder:', images.length);
+
+    // Alle Bilder durchgehen
+    for (const img of images) {
+        if (!img.src) continue;
+
+        console.log('📥 Lade:', img.src);
+
+        try {
+            const base64 = await imageToBase64(img.src);
+            const sizeKB = Math.round(base64.length * 3 / 4 / 1024);
+
+            results.push({
+                src: img.src,
+                alt: img.alt || '',
+                width: img.naturalWidth,
+                height: img.naturalHeight,
+                base64: base64,
+                size: sizeKB + ' KB'
+            });
+
+            console.log('✅ Fertig:', img.alt, '-', sizeKB, 'KB');
+        } catch (error) {
+            console.error('❌ Fehler bei:', img.src, error);
+        }
+    }
+
+    // Ergebnis anzeigen
+    console.log('✅ FERTIG! Gefundene Bilder:', results.length);
+    console.log('📊 Daten:', results);
+
+    // Als JSON in Zwischenablage kopieren
+    const json = JSON.stringify(results, null, 2);
+    await navigator.clipboard.writeText(json);
+    console.log('📋 JSON in Zwischenablage kopiert!');
+
+    // Modal mit Ergebnis anzeigen
+    const modal = document.createElement('div');
+    modal.innerHTML = `
+        <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 999999; display: flex; align-items: center; justify-content: center;">
+            <div style="background: white; padding: 30px; max-width: 900px; max-height: 80vh; overflow: auto; border-radius: 10px;">
+                <h2 style="color: #1a4d7a;">🖼️ ${results.length} Bilder extrahiert</h2>
+                <div style="margin: 20px 0;">
+                    ${results.map(img => `
+                        <div style="border: 1px solid #ddd; padding: 10px; margin: 10px 0; border-radius: 5px;">
+                            <strong>${img.alt || 'Kein Alt-Text'}</strong><br>
+                            <small>${img.width}x${img.height} - ${img.size}</small><br>
+                            <code style="font-size: 10px; word-break: break-all;">${img.src}</code>
+                        </div>
+                    `).join('')}
+                </div>
+                <textarea readonly style="width: 100%; height: 200px; font-family: monospace; font-size: 11px; padding: 10px;">${json}</textarea>
+                <button onclick="navigator.clipboard.writeText(\`${json.replace(/`/g, '\\`')}\`); alert('Kopiert!')" style="background: #1a4d7a; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin: 10px 5px 0 0;">Kopieren</button>
+                <button onclick="this.closest('div').closest('div').remove()" style="background: #666; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin: 10px 0 0 0;">Schließen</button>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(modal);
+
+    alert(`✅ ${results.length} Bilder extrahiert!\n\nJSON wurde in Zwischenablage kopiert.`);
+})();
+    </textarea>
+
+    <button onclick="copyCode()" style="background: #1a4d7a; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-top: 10px;">Code kopieren</button>
+
+    <h2>📦 Bilder in HTML einbauen</h2>
+
+    <div class="step">
+        <h3>Nach dem Extrahieren:</h3>
+        <p>Sie erhalten eine JSON-Datei mit diesem Format:</p>
+        <pre style="background: #f5f5f5; padding: 15px; border-radius: 5px; overflow-x: auto;"><code>[
+  {
+    "src": "https://www.kanzlei-himmelsbach.de/images/logo.jpg",
+    "alt": "Kanzlei Logo",
+    "base64": "data:image/jpeg;base64,/9j/4AAQ..."
+  },
+  ...
+]</code></pre>
+
+        <p>Verwenden Sie die <code>base64</code>-Werte in Ihrer HTML-Datei:</p>
+        <pre style="background: #f5f5f5; padding: 15px; border-radius: 5px; overflow-x: auto;"><code>&lt;img src="data:image/jpeg;base64,/9j/4AAQ..." alt="Kanzlei Logo"&gt;</code></pre>
+    </div>
+
+    <h2>💡 Tipps</h2>
+
+    <ul>
+        <li><strong>CORS-Fehler?</strong> Einige Bilder können wegen CORS nicht konvertiert werden. In dem Fall notieren Sie die URL und laden Sie das Bild manuell herunter.</li>
+        <li><strong>Große Dateien:</strong> Base64 vergrößert die Dateigröße um ~33%. Bei großen Bildern besser externe Links verwenden.</li>
+        <li><strong>Optimierung:</strong> Komprimieren Sie Bilder vor dem Einbau mit Tools wie TinyPNG oder Squoosh.</li>
+    </ul>
+
+    <script>
+        function copyCode() {
+            const code = document.getElementById('jsCode');
+            code.select();
+            document.execCommand('copy');
+            alert('✅ Code kopiert! Fügen Sie ihn in die Browser-Konsole ein.');
+        }
+    </script>
+</body>
+</html>
