@@ -1,0 +1,56 @@
+/* WITF? - What's In That Fridge?
+   Spanish Localization (es) - Stub
+   TODO: Complete professional Spanish translation
+*/
+
+// MARK: - Common
+"common.ok" = "OK";
+"common.cancel" = "Cancelar";
+"common.done" = "Listo";
+"common.save" = "Guardar";
+"common.delete" = "Eliminar";
+"common.add" = "Añadir";
+"common.edit" = "Editar";
+"common.close" = "Cerrar";
+"common.search" = "Buscar";
+"common.loading" = "Cargando...";
+"common.error" = "Error";
+
+// MARK: - Tabs
+"tab.home" = "Inicio";
+"tab.recipes" = "Recetas";
+"tab.myfridge" = "Mi Nevera";
+"tab.profile" = "Perfil";
+
+// MARK: - Onboarding
+"onboarding.skip" = "Omitir";
+"onboarding.next" = "Siguiente";
+"onboarding.getStarted" = "Empezar";
+"onboarding.page1.title" = "¿Qué puedo cocinar?";
+"onboarding.page1.subtitle" = "Todos hemos estado ahí";
+"onboarding.page1.description" = "Parado frente a la nevera, preguntándote qué preparar con lo que tienes. Sin más desperdicio de comida, sin estrés.";
+"onboarding.page2.title" = "Escanea y Descubre";
+"onboarding.page2.subtitle" = "Magia impulsada por IA";
+"onboarding.page2.description" = "Simplemente toma una foto de tu nevera o despensa. Nuestra IA detecta ingredientes y sugiere recetas deliciosas.";
+"onboarding.page3.title" = "Sabores Globales";
+"onboarding.page3.subtitle" = "Cocinas de todo el mundo";
+"onboarding.page3.description" = "Desde cocina casera alemana hasta clásicos italianos, platos mediterráneos hasta favoritos asiáticos. Disponible en varios idiomas.";
+
+// MARK: - Home
+"home.title" = "WITF?";
+"home.greeting" = "¿Qué cocinamos?";
+"home.subtitle" = "Convierte tu nevera en cena";
+"home.clear" = "Borrar";
+"home.scan.placeholder" = "Toma una foto de tu nevera";
+"home.takePhoto" = "Tomar Foto";
+"home.addManually" = "Añadir Manualmente";
+"home.ingredients.title" = "Ingredientes Detectados";
+"home.addMore" = "Añadir Más";
+"home.cuisine.title" = "Estilo de Cocina";
+"home.servings.title" = "Porciones";
+"home.generate" = "Generar Recetas";
+"home.recent.title" = "Recetas Recientes";
+"home.scanning" = "Escaneando ingredientes...";
+"home.generating" = "Creando recetas...";
+
+// TODO: Complete Spanish translation for all remaining keys

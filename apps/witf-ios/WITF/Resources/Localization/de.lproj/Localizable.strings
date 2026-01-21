@@ -1,0 +1,257 @@
+/* WITF? - What's In That Fridge?
+   German Localization (de)
+*/
+
+// MARK: - Common
+"common.ok" = "OK";
+"common.cancel" = "Abbrechen";
+"common.done" = "Fertig";
+"common.save" = "Speichern";
+"common.delete" = "Löschen";
+"common.add" = "Hinzufügen";
+"common.edit" = "Bearbeiten";
+"common.close" = "Schließen";
+"common.search" = "Suchen";
+"common.loading" = "Laden...";
+"common.error" = "Fehler";
+
+// MARK: - Tabs
+"tab.home" = "Start";
+"tab.recipes" = "Rezepte";
+"tab.myfridge" = "Mein Kühlschrank";
+"tab.profile" = "Profil";
+
+// MARK: - Onboarding
+"onboarding.skip" = "Überspringen";
+"onboarding.next" = "Weiter";
+"onboarding.getStarted" = "Los geht's";
+"onboarding.page1.title" = "Was kann ich kochen?";
+"onboarding.page1.subtitle" = "Kennen wir alle";
+"onboarding.page1.description" = "Vor dem Kühlschrank stehen und überlegen, was man aus den vorhandenen Zutaten zaubern kann. Keine Lebensmittelverschwendung mehr, kein Stress.";
+"onboarding.page2.title" = "Scannen & Entdecken";
+"onboarding.page2.subtitle" = "KI-gestützte Magie";
+"onboarding.page2.description" = "Einfach ein Foto deines Kühlschranks oder deiner Vorratskammer machen. Unsere KI erkennt Zutaten und schlägt leckere Rezepte vor.";
+"onboarding.page3.title" = "Weltweite Aromen";
+"onboarding.page3.subtitle" = "Küchen aus aller Welt";
+"onboarding.page3.description" = "Von deutscher Hausmannskost bis italienische Klassiker, mediterrane Gerichte bis asiatische Favoriten. In mehreren Sprachen verfügbar.";
+
+// MARK: - Home
+"home.title" = "WITF?";
+"home.greeting" = "Was gibt's zu essen?";
+"home.subtitle" = "Verwandle deinen Kühlschrank in Abendessen";
+"home.clear" = "Leeren";
+"home.scan.placeholder" = "Mach ein Foto von deinem Kühlschrank";
+"home.takePhoto" = "Foto aufnehmen";
+"home.addManually" = "Manuell hinzufügen";
+"home.ingredients.title" = "Erkannte Zutaten";
+"home.addMore" = "Mehr hinzufügen";
+"home.cuisine.title" = "Küchenstil";
+"home.servings.title" = "Portionen";
+"home.generate" = "Rezepte erstellen";
+"home.recent.title" = "Letzte Rezepte";
+"home.scanning" = "Zutaten werden gescannt...";
+"home.generating" = "Rezepte werden erstellt...";
+
+// MARK: - Fridge
+"fridge.title" = "Mein Kühlschrank";
+"fridge.loading" = "Kühlschrank wird geladen...";
+"fridge.search.placeholder" = "Zutaten suchen";
+"fridge.add" = "Zutat hinzufügen";
+"fridge.add.first" = "Erste Zutat hinzufügen";
+"fridge.clear.all" = "Alles leeren";
+"fridge.clear.confirmation.title" = "Alle Zutaten löschen?";
+"fridge.clear.confirmation.message" = "Dies entfernt alle Zutaten aus deinem Kühlschrank. Diese Aktion kann nicht rückgängig gemacht werden.";
+"fridge.empty.title" = "Dein Kühlschrank ist leer";
+"fridge.empty.message" = "Füge Zutaten hinzu, um personalisierte Rezeptvorschläge zu erhalten";
+"fridge.quickadd" = "Schnell hinzufügen";
+
+// MARK: - Ingredients
+"ingredient.name" = "Zutatenname";
+"ingredient.name.placeholder" = "z.B. Tomaten";
+"ingredient.category" = "Kategorie";
+"ingredient.quantity" = "Menge";
+"ingredient.quantity.optional" = "Menge (Optional)";
+"ingredient.unit" = "Einheit";
+"ingredient.add.title" = "Zutat hinzufügen";
+"ingredient.edit.title" = "Zutat bearbeiten";
+"ingredient.delete" = "Zutat löschen";
+"ingredient.presets" = "Schnellauswahl";
+
+// MARK: - Ingredient Categories
+"ingredient.category.vegetables" = "Gemüse";
+"ingredient.category.fruits" = "Obst";
+"ingredient.category.dairy" = "Milchprodukte";
+"ingredient.category.meat" = "Fleisch";
+"ingredient.category.seafood" = "Meeresfrüchte";
+"ingredient.category.grains" = "Getreide & Nudeln";
+"ingredient.category.condiments" = "Gewürze & Soßen";
+"ingredient.category.spices" = "Kräuter";
+"ingredient.category.beverages" = "Getränke";
+"ingredient.category.frozen" = "Tiefkühl";
+"ingredient.category.canned" = "Konserven";
+"ingredient.category.bakery" = "Backwaren";
+"ingredient.category.other" = "Sonstiges";
+
+// MARK: - Units
+"unit.pieces" = "Stück";
+"unit.pieces.abbr" = "Stk";
+"unit.grams" = "Gramm";
+"unit.kilograms" = "Kilogramm";
+"unit.milliliters" = "Milliliter";
+"unit.liters" = "Liter";
+"unit.cups" = "Tassen";
+"unit.cups.abbr" = "Tassen";
+"unit.tablespoons" = "Esslöffel";
+"unit.tbsp.abbr" = "EL";
+"unit.teaspoons" = "Teelöffel";
+"unit.tsp.abbr" = "TL";
+"unit.slices" = "Scheiben";
+"unit.slices.abbr" = "Sch.";
+"unit.bunches" = "Bund";
+"unit.bunches.abbr" = "Bund";
+
+// MARK: - Recipes
+"recipes.title" = "Rezepte";
+"recipes.loading" = "Rezepte werden geladen...";
+"recipes.search.placeholder" = "Rezepte suchen";
+"recipes.generated.title" = "Deine Rezepte";
+"recipes.filter.all" = "Alle";
+"recipes.filter.favorites" = "Favoriten";
+"recipes.filter.history" = "Verlauf";
+"recipes.empty.all.title" = "Noch keine Rezepte";
+"recipes.empty.all.message" = "Erstelle Rezepte aus deinen Kühlschrank-Zutaten oder stöbere in unserer Sammlung";
+"recipes.empty.favorites.title" = "Noch keine Favoriten";
+"recipes.empty.favorites.message" = "Speichere Rezepte, die du liebst, um sie hier zu finden";
+"recipes.empty.history.title" = "Noch kein Verlauf";
+"recipes.empty.history.message" = "Rezepte, die du erstellst, erscheinen hier";
+
+// MARK: - Recipe Detail
+"recipe.servings" = "Portionen";
+"recipe.servings.adjust" = "Portionen anpassen";
+"recipe.ingredients" = "Zutaten";
+"recipe.instructions" = "Zubereitung";
+"recipe.nutrition" = "Nährwerte";
+"recipe.nutrition.note" = "* Ungefähre Werte pro Portion";
+"recipe.optional" = "optional";
+
+// MARK: - Nutrition
+"nutrition.calories" = "Kalorien";
+"nutrition.protein" = "Eiweiß";
+"nutrition.carbs" = "Kohlenhydrate";
+"nutrition.fat" = "Fett";
+
+// MARK: - Difficulty
+"difficulty.easy" = "Einfach";
+"difficulty.medium" = "Mittel";
+"difficulty.hard" = "Schwer";
+
+// MARK: - Cuisines
+"cuisine.german" = "Deutsch";
+"cuisine.german.subtitle" = "Herzhafte Hausmannskost";
+"cuisine.italian" = "Italienisch";
+"cuisine.italian.subtitle" = "Mediterrane Aromen";
+"cuisine.mediterranean" = "Mediterran";
+"cuisine.mediterranean.subtitle" = "Frisch & gesund";
+"cuisine.asian" = "Asiatisch";
+"cuisine.asian.subtitle" = "Östliche Genüsse";
+"cuisine.french" = "Französisch";
+"cuisine.french.subtitle" = "Verfeinerte Klassiker";
+"cuisine.spanish" = "Spanisch";
+"cuisine.spanish.subtitle" = "Tapas & mehr";
+"cuisine.american" = "Amerikanisch";
+"cuisine.american.subtitle" = "Comfort Food";
+"cuisine.mexican" = "Mexikanisch";
+"cuisine.mexican.subtitle" = "Scharfe Favoriten";
+"cuisine.indian" = "Indisch";
+"cuisine.indian.subtitle" = "Aromatische Gewürze";
+"cuisine.international" = "International";
+"cuisine.international.subtitle" = "Globale Mischung";
+"cuisine.surprise" = "Überrasch mich";
+"cuisine.surprise.subtitle" = "Zufällige Auswahl";
+"cuisine.preferences.title" = "Küchen-Vorlieben";
+
+// MARK: - Profile
+"profile.title" = "Profil";
+"profile.subscription" = "Abonnement";
+"profile.preferences" = "Einstellungen";
+"profile.settings" = "Einstellungen";
+"profile.about" = "Über";
+"profile.language" = "Sprache";
+"profile.default.servings" = "Standard-Portionen";
+"profile.cuisine.preferences" = "Küchen-Vorlieben";
+"profile.selected" = "ausgewählt";
+"profile.appearance" = "Erscheinungsbild";
+"profile.version" = "Version";
+"profile.privacy" = "Datenschutz";
+"profile.terms" = "Nutzungsbedingungen";
+"profile.support" = "Support kontaktieren";
+"profile.tagline" = "Verwandle deinen Kühlschrank in Abendessen.";
+
+// MARK: - Languages
+"language.system" = "System";
+
+// MARK: - Appearance
+"appearance.system" = "System";
+"appearance.light" = "Hell";
+"appearance.dark" = "Dunkel";
+
+// MARK: - Subscription
+"subscription.free" = "Kostenlos";
+"subscription.free.description" = "5 Rezepterstellungen pro Monat";
+"subscription.free.price" = "Kostenlos";
+"subscription.premium.monthly" = "Premium Monatlich";
+"subscription.premium.monthly.description" = "Unbegrenzte Rezepte, alle Küchen";
+"subscription.premium.yearly" = "Premium Jährlich";
+"subscription.premium.yearly.description" = "Bester Wert - Spare 37%";
+"subscription.lifetime" = "Lebenslang";
+"subscription.lifetime.description" = "Einmal zahlen, für immer genießen";
+"subscription.period.month" = "Monat";
+"subscription.period.year" = "Jahr";
+"subscription.upgrade" = "Upgrade";
+"subscription.restore" = "Käufe wiederherstellen";
+"subscription.unlimited" = "Unbegrenzte Erstellungen";
+"subscription.remaining.%lld" = "%lld Erstellungen übrig";
+"subscription.premium.footer" = "Danke, dass du Premium-Mitglied bist!";
+
+// MARK: - Features
+"feature.basic.scan" = "Basis-Kühlschrank-Scan";
+"feature.limited.generations" = "Rezepterstellungen";
+"feature.basic.cuisines" = "Basis-Küchen";
+"feature.save.recipes" = "Rezepte speichern";
+"feature.unlimited.scan" = "Unbegrenztes Scannen";
+"feature.unlimited.generations" = "Unbegrenzte Rezepte";
+"feature.unlimited.generations.desc" = "Erstelle so viele Rezepte wie du möchtest";
+"feature.all.cuisines" = "Alle Küchen";
+"feature.all.cuisines.desc" = "Zugang zu allen regionalen Küchen";
+"feature.unlimited.recipes" = "Unbegrenzt gespeicherte Rezepte";
+"feature.smart.suggestions" = "Intelligente Vorschläge";
+"feature.smart.suggestions.desc" = "KI-gestützte Mahlzeitenplanung";
+"feature.nutrition.details" = "Nährwert-Infos";
+"feature.nutrition.details.desc" = "Detaillierte Nährwertangaben";
+"feature.no.ads" = "Keine Werbung";
+
+// MARK: - Paywall
+"paywall.title" = "Premium freischalten";
+"paywall.subtitle" = "Erhalte unbegrenzten Zugang zu allen Funktionen";
+"paywall.subscribe" = "Abonnieren";
+"paywall.best.value" = "Bester Wert";
+"paywall.terms" = "AGB";
+"paywall.privacy" = "Datenschutz";
+"paywall.disclaimer" = "Abonnements verlängern sich automatisch, sofern sie nicht mindestens 24 Stunden vor Ablauf des aktuellen Zeitraums gekündigt werden.";
+
+// MARK: - Purchase
+"purchase.pending" = "Kauf wartet auf Genehmigung";
+"purchase.processing" = "Kauf wird verarbeitet...";
+"purchase.success.title" = "Willkommen bei Premium!";
+"purchase.success.message" = "Du hast jetzt unbegrenzten Zugang zu allen Funktionen.";
+
+// MARK: - Errors
+"error.title" = "Fehler";
+"error.no.ingredients" = "Bitte füge zuerst einige Zutaten hinzu";
+"error.no.ingredients.selected" = "Bitte wähle mindestens eine Zutat aus";
+"error.no.recipes" = "Keine passenden Rezepte gefunden";
+"error.generation.failed" = "Rezepterstellung fehlgeschlagen";
+"error.quota.exceeded" = "Du hast dein monatliches Limit erreicht. Upgrade auf Premium für unbegrenzte Rezepte.";
+"error.purchase.verification" = "Kaufverifizierung fehlgeschlagen";
+"error.product.not.found" = "Produkt nicht gefunden";
+"error.purchase.failed" = "Kauf fehlgeschlagen";

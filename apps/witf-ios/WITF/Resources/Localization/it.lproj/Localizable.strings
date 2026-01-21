@@ -1,0 +1,56 @@
+/* WITF? - What's In That Fridge?
+   Italian Localization (it) - Stub
+   TODO: Complete professional Italian translation
+*/
+
+// MARK: - Common
+"common.ok" = "OK";
+"common.cancel" = "Annulla";
+"common.done" = "Fatto";
+"common.save" = "Salva";
+"common.delete" = "Elimina";
+"common.add" = "Aggiungi";
+"common.edit" = "Modifica";
+"common.close" = "Chiudi";
+"common.search" = "Cerca";
+"common.loading" = "Caricamento...";
+"common.error" = "Errore";
+
+// MARK: - Tabs
+"tab.home" = "Home";
+"tab.recipes" = "Ricette";
+"tab.myfridge" = "Il Mio Frigo";
+"tab.profile" = "Profilo";
+
+// MARK: - Onboarding
+"onboarding.skip" = "Salta";
+"onboarding.next" = "Avanti";
+"onboarding.getStarted" = "Inizia";
+"onboarding.page1.title" = "Cosa posso cucinare?";
+"onboarding.page1.subtitle" = "Ci siamo passati tutti";
+"onboarding.page1.description" = "In piedi davanti al frigo, chiedendosi cosa preparare con quello che si ha. Niente più spreco alimentare, niente stress.";
+"onboarding.page2.title" = "Scansiona e Scopri";
+"onboarding.page2.subtitle" = "Magia alimentata dall'IA";
+"onboarding.page2.description" = "Basta scattare una foto del frigo o della dispensa. La nostra IA rileva gli ingredienti e suggerisce ricette deliziose.";
+"onboarding.page3.title" = "Sapori Globali";
+"onboarding.page3.subtitle" = "Cucine da tutto il mondo";
+"onboarding.page3.description" = "Dalla cucina casalinga tedesca ai classici italiani, dai piatti mediterranei ai preferiti asiatici. Disponibile in più lingue.";
+
+// MARK: - Home
+"home.title" = "WITF?";
+"home.greeting" = "Cosa cuciniamo?";
+"home.subtitle" = "Trasforma il tuo frigo in cena";
+"home.clear" = "Cancella";
+"home.scan.placeholder" = "Scatta una foto del tuo frigo";
+"home.takePhoto" = "Scatta Foto";
+"home.addManually" = "Aggiungi Manualmente";
+"home.ingredients.title" = "Ingredienti Rilevati";
+"home.addMore" = "Aggiungi Altri";
+"home.cuisine.title" = "Stile di Cucina";
+"home.servings.title" = "Porzioni";
+"home.generate" = "Genera Ricette";
+"home.recent.title" = "Ricette Recenti";
+"home.scanning" = "Scansione ingredienti...";
+"home.generating" = "Creazione ricette...";
+
+// TODO: Complete Italian translation for all remaining keys

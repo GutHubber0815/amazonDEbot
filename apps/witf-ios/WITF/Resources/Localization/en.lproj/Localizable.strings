@@ -1,0 +1,257 @@
+/* WITF? - What's In That Fridge?
+   English Localization (en)
+*/
+
+// MARK: - Common
+"common.ok" = "OK";
+"common.cancel" = "Cancel";
+"common.done" = "Done";
+"common.save" = "Save";
+"common.delete" = "Delete";
+"common.add" = "Add";
+"common.edit" = "Edit";
+"common.close" = "Close";
+"common.search" = "Search";
+"common.loading" = "Loading...";
+"common.error" = "Error";
+
+// MARK: - Tabs
+"tab.home" = "Home";
+"tab.recipes" = "Recipes";
+"tab.myfridge" = "My Fridge";
+"tab.profile" = "Profile";
+
+// MARK: - Onboarding
+"onboarding.skip" = "Skip";
+"onboarding.next" = "Next";
+"onboarding.getStarted" = "Get Started";
+"onboarding.page1.title" = "What can I cook?";
+"onboarding.page1.subtitle" = "We've all been there";
+"onboarding.page1.description" = "Standing in front of the fridge, wondering what to make with what you have. No more food waste, no more stress.";
+"onboarding.page2.title" = "Scan & Discover";
+"onboarding.page2.subtitle" = "AI-powered magic";
+"onboarding.page2.description" = "Simply take a photo of your fridge or pantry. Our AI detects ingredients and suggests delicious recipes you can make.";
+"onboarding.page3.title" = "Global Flavors";
+"onboarding.page3.subtitle" = "Cuisines from around the world";
+"onboarding.page3.description" = "From German home cooking to Italian classics, Mediterranean dishes to Asian favorites. Available in multiple languages.";
+
+// MARK: - Home
+"home.title" = "WITF?";
+"home.greeting" = "What's cooking?";
+"home.subtitle" = "Turn your fridge into dinner";
+"home.clear" = "Clear";
+"home.scan.placeholder" = "Take a photo of your fridge";
+"home.takePhoto" = "Take Photo";
+"home.addManually" = "Add Manually";
+"home.ingredients.title" = "Detected Ingredients";
+"home.addMore" = "Add More";
+"home.cuisine.title" = "Cuisine Style";
+"home.servings.title" = "Servings";
+"home.generate" = "Generate Recipes";
+"home.recent.title" = "Recent Recipes";
+"home.scanning" = "Scanning ingredients...";
+"home.generating" = "Creating recipes...";
+
+// MARK: - Fridge
+"fridge.title" = "My Fridge";
+"fridge.loading" = "Loading your fridge...";
+"fridge.search.placeholder" = "Search ingredients";
+"fridge.add" = "Add Ingredient";
+"fridge.add.first" = "Add Your First Ingredient";
+"fridge.clear.all" = "Clear All";
+"fridge.clear.confirmation.title" = "Clear All Ingredients?";
+"fridge.clear.confirmation.message" = "This will remove all ingredients from your fridge. This action cannot be undone.";
+"fridge.empty.title" = "Your fridge is empty";
+"fridge.empty.message" = "Add ingredients to get personalized recipe suggestions";
+"fridge.quickadd" = "Quick Add";
+
+// MARK: - Ingredients
+"ingredient.name" = "Ingredient Name";
+"ingredient.name.placeholder" = "e.g., Tomatoes";
+"ingredient.category" = "Category";
+"ingredient.quantity" = "Quantity";
+"ingredient.quantity.optional" = "Quantity (Optional)";
+"ingredient.unit" = "Unit";
+"ingredient.add.title" = "Add Ingredient";
+"ingredient.edit.title" = "Edit Ingredient";
+"ingredient.delete" = "Delete Ingredient";
+"ingredient.presets" = "Quick Presets";
+
+// MARK: - Ingredient Categories
+"ingredient.category.vegetables" = "Vegetables";
+"ingredient.category.fruits" = "Fruits";
+"ingredient.category.dairy" = "Dairy";
+"ingredient.category.meat" = "Meat";
+"ingredient.category.seafood" = "Seafood";
+"ingredient.category.grains" = "Grains & Pasta";
+"ingredient.category.condiments" = "Condiments";
+"ingredient.category.spices" = "Spices & Herbs";
+"ingredient.category.beverages" = "Beverages";
+"ingredient.category.frozen" = "Frozen";
+"ingredient.category.canned" = "Canned";
+"ingredient.category.bakery" = "Bakery";
+"ingredient.category.other" = "Other";
+
+// MARK: - Units
+"unit.pieces" = "pieces";
+"unit.pieces.abbr" = "pcs";
+"unit.grams" = "grams";
+"unit.kilograms" = "kilograms";
+"unit.milliliters" = "milliliters";
+"unit.liters" = "liters";
+"unit.cups" = "cups";
+"unit.cups.abbr" = "cups";
+"unit.tablespoons" = "tablespoons";
+"unit.tbsp.abbr" = "tbsp";
+"unit.teaspoons" = "teaspoons";
+"unit.tsp.abbr" = "tsp";
+"unit.slices" = "slices";
+"unit.slices.abbr" = "slices";
+"unit.bunches" = "bunches";
+"unit.bunches.abbr" = "bunch";
+
+// MARK: - Recipes
+"recipes.title" = "Recipes";
+"recipes.loading" = "Loading recipes...";
+"recipes.search.placeholder" = "Search recipes";
+"recipes.generated.title" = "Your Recipes";
+"recipes.filter.all" = "All";
+"recipes.filter.favorites" = "Favorites";
+"recipes.filter.history" = "History";
+"recipes.empty.all.title" = "No recipes yet";
+"recipes.empty.all.message" = "Generate recipes from your fridge ingredients or browse our collection";
+"recipes.empty.favorites.title" = "No favorites yet";
+"recipes.empty.favorites.message" = "Save recipes you love to find them here";
+"recipes.empty.history.title" = "No history yet";
+"recipes.empty.history.message" = "Recipes you generate will appear here";
+
+// MARK: - Recipe Detail
+"recipe.servings" = "Servings";
+"recipe.servings.adjust" = "Adjust portions";
+"recipe.ingredients" = "Ingredients";
+"recipe.instructions" = "Instructions";
+"recipe.nutrition" = "Nutrition";
+"recipe.nutrition.note" = "* Approximate values per serving";
+"recipe.optional" = "optional";
+
+// MARK: - Nutrition
+"nutrition.calories" = "Calories";
+"nutrition.protein" = "Protein";
+"nutrition.carbs" = "Carbs";
+"nutrition.fat" = "Fat";
+
+// MARK: - Difficulty
+"difficulty.easy" = "Easy";
+"difficulty.medium" = "Medium";
+"difficulty.hard" = "Hard";
+
+// MARK: - Cuisines
+"cuisine.german" = "German";
+"cuisine.german.subtitle" = "Hearty home cooking";
+"cuisine.italian" = "Italian";
+"cuisine.italian.subtitle" = "Mediterranean flavors";
+"cuisine.mediterranean" = "Mediterranean";
+"cuisine.mediterranean.subtitle" = "Fresh & healthy";
+"cuisine.asian" = "Asian";
+"cuisine.asian.subtitle" = "Eastern delights";
+"cuisine.french" = "French";
+"cuisine.french.subtitle" = "Refined classics";
+"cuisine.spanish" = "Spanish";
+"cuisine.spanish.subtitle" = "Tapas & more";
+"cuisine.american" = "American";
+"cuisine.american.subtitle" = "Comfort food";
+"cuisine.mexican" = "Mexican";
+"cuisine.mexican.subtitle" = "Spicy favorites";
+"cuisine.indian" = "Indian";
+"cuisine.indian.subtitle" = "Aromatic spices";
+"cuisine.international" = "International";
+"cuisine.international.subtitle" = "Global mix";
+"cuisine.surprise" = "Surprise Me";
+"cuisine.surprise.subtitle" = "Random selection";
+"cuisine.preferences.title" = "Cuisine Preferences";
+
+// MARK: - Profile
+"profile.title" = "Profile";
+"profile.subscription" = "Subscription";
+"profile.preferences" = "Preferences";
+"profile.settings" = "Settings";
+"profile.about" = "About";
+"profile.language" = "Language";
+"profile.default.servings" = "Default Servings";
+"profile.cuisine.preferences" = "Cuisine Preferences";
+"profile.selected" = "selected";
+"profile.appearance" = "Appearance";
+"profile.version" = "Version";
+"profile.privacy" = "Privacy Policy";
+"profile.terms" = "Terms of Service";
+"profile.support" = "Contact Support";
+"profile.tagline" = "Turn your fridge into dinner.";
+
+// MARK: - Languages
+"language.system" = "System";
+
+// MARK: - Appearance
+"appearance.system" = "System";
+"appearance.light" = "Light";
+"appearance.dark" = "Dark";
+
+// MARK: - Subscription
+"subscription.free" = "Free";
+"subscription.free.description" = "5 recipe generations per month";
+"subscription.free.price" = "Free";
+"subscription.premium.monthly" = "Premium Monthly";
+"subscription.premium.monthly.description" = "Unlimited recipes, all cuisines";
+"subscription.premium.yearly" = "Premium Yearly";
+"subscription.premium.yearly.description" = "Best value - Save 37%";
+"subscription.lifetime" = "Lifetime";
+"subscription.lifetime.description" = "Pay once, enjoy forever";
+"subscription.period.month" = "month";
+"subscription.period.year" = "year";
+"subscription.upgrade" = "Upgrade";
+"subscription.restore" = "Restore Purchases";
+"subscription.unlimited" = "Unlimited generations";
+"subscription.remaining.%lld" = "%lld generations remaining";
+"subscription.premium.footer" = "Thank you for being a premium member!";
+
+// MARK: - Features
+"feature.basic.scan" = "Basic fridge scanning";
+"feature.limited.generations" = "Recipe generations";
+"feature.basic.cuisines" = "Basic cuisines";
+"feature.save.recipes" = "Save recipes";
+"feature.unlimited.scan" = "Unlimited scanning";
+"feature.unlimited.generations" = "Unlimited recipes";
+"feature.unlimited.generations.desc" = "Generate as many recipes as you want";
+"feature.all.cuisines" = "All cuisines";
+"feature.all.cuisines.desc" = "Access to all regional cuisines";
+"feature.unlimited.recipes" = "Unlimited saved recipes";
+"feature.smart.suggestions" = "Smart suggestions";
+"feature.smart.suggestions.desc" = "AI-powered meal planning";
+"feature.nutrition.details" = "Nutrition info";
+"feature.nutrition.details.desc" = "Detailed nutritional information";
+"feature.no.ads" = "No advertisements";
+
+// MARK: - Paywall
+"paywall.title" = "Unlock Premium";
+"paywall.subtitle" = "Get unlimited access to all features";
+"paywall.subscribe" = "Subscribe";
+"paywall.best.value" = "Best Value";
+"paywall.terms" = "Terms";
+"paywall.privacy" = "Privacy";
+"paywall.disclaimer" = "Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period.";
+
+// MARK: - Purchase
+"purchase.pending" = "Purchase is pending approval";
+"purchase.processing" = "Processing purchase...";
+"purchase.success.title" = "Welcome to Premium!";
+"purchase.success.message" = "You now have unlimited access to all features.";
+
+// MARK: - Errors
+"error.title" = "Error";
+"error.no.ingredients" = "Please add some ingredients first";
+"error.no.ingredients.selected" = "Please select at least one ingredient";
+"error.no.recipes" = "No matching recipes found";
+"error.generation.failed" = "Recipe generation failed";
+"error.quota.exceeded" = "You've reached your monthly limit. Upgrade to Premium for unlimited recipes.";
+"error.purchase.verification" = "Purchase verification failed";
+"error.product.not.found" = "Product not found";
+"error.purchase.failed" = "Purchase failed";

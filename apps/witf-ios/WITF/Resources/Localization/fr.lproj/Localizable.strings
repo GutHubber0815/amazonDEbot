@@ -1,0 +1,57 @@
+/* WITF? - What's In That Fridge?
+   French Localization (fr) - Stub
+   TODO: Complete professional French translation
+*/
+
+// MARK: - Common
+"common.ok" = "OK";
+"common.cancel" = "Annuler";
+"common.done" = "Terminé";
+"common.save" = "Enregistrer";
+"common.delete" = "Supprimer";
+"common.add" = "Ajouter";
+"common.edit" = "Modifier";
+"common.close" = "Fermer";
+"common.search" = "Rechercher";
+"common.loading" = "Chargement...";
+"common.error" = "Erreur";
+
+// MARK: - Tabs
+"tab.home" = "Accueil";
+"tab.recipes" = "Recettes";
+"tab.myfridge" = "Mon Frigo";
+"tab.profile" = "Profil";
+
+// MARK: - Onboarding
+"onboarding.skip" = "Passer";
+"onboarding.next" = "Suivant";
+"onboarding.getStarted" = "Commencer";
+"onboarding.page1.title" = "Que puis-je cuisiner?";
+"onboarding.page1.subtitle" = "On connaît tous ça";
+"onboarding.page1.description" = "Debout devant le frigo, à se demander quoi préparer avec ce qu'on a. Plus de gaspillage alimentaire, plus de stress.";
+"onboarding.page2.title" = "Scanner & Découvrir";
+"onboarding.page2.subtitle" = "Magie alimentée par l'IA";
+"onboarding.page2.description" = "Prenez simplement une photo de votre frigo ou garde-manger. Notre IA détecte les ingrédients et suggère des recettes délicieuses.";
+"onboarding.page3.title" = "Saveurs du Monde";
+"onboarding.page3.subtitle" = "Cuisines du monde entier";
+"onboarding.page3.description" = "De la cuisine allemande aux classiques italiens, des plats méditerranéens aux favoris asiatiques. Disponible en plusieurs langues.";
+
+// MARK: - Home
+"home.title" = "WITF?";
+"home.greeting" = "Qu'est-ce qu'on mange?";
+"home.subtitle" = "Transformez votre frigo en dîner";
+"home.clear" = "Effacer";
+"home.scan.placeholder" = "Prenez une photo de votre frigo";
+"home.takePhoto" = "Prendre Photo";
+"home.addManually" = "Ajouter Manuellement";
+"home.ingredients.title" = "Ingrédients Détectés";
+"home.addMore" = "Ajouter Plus";
+"home.cuisine.title" = "Style de Cuisine";
+"home.servings.title" = "Portions";
+"home.generate" = "Générer des Recettes";
+"home.recent.title" = "Recettes Récentes";
+"home.scanning" = "Scan des ingrédients...";
+"home.generating" = "Création des recettes...";
+
+// MARK: - Additional keys use English as fallback
+// TODO: Complete French translation for all remaining keys
